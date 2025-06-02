@@ -607,30 +607,49 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .room-card {
     max-width: 400px;
     margin: 0 auto;
+    width: 100%;
   }
 
   .section-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   .location-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-container,
+  .location-info-stack {
+    width: 100%;
+    max-width: 400px;
   }
 
   .nearby-attractions {
     grid-template-columns: 1fr !important;
     gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .attraction-item {
     padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
   }
 }
 @media (max-width: 600px) {
@@ -639,14 +658,19 @@
   }
   .rooms-grid {
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .room-card {
     max-width: 100%;
+    width: 100%;
   }
 
   .section-content {
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .rooms-section,
@@ -658,10 +682,17 @@
 
   .nearby-attractions {
     padding: 1.5rem;
+    width: 100%;
   }
 
   .attraction-item {
     padding: 1rem;
+    width: 100%;
+  }
+
+  .map-container,
+  .location-info-stack {
+    width: 100%;
   }
 }
 
