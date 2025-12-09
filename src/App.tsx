@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import './App.css'
 
 const AIRBNB_LINK = 'https://www.airbnb.com/users/show/229653690'
@@ -237,6 +238,7 @@ function App() {
           </div>
         </section>
       </div>
+      <SpeedInsights />
     </>
   )
 }
