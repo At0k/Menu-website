@@ -8,7 +8,13 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 // Function to get HTTPS options compatible with Windows
+// Only used in development mode, not during build
 function getHttpsOptions() {
+  // Only enable HTTPS in development (not during build or on Vercel)
+  if (process.env.NODE_ENV === 'production' || process.env.VERCEL) {
+    return undefined
+  }
+
   const certDir = path.join(__dirname, '.cert')
   const keyPath = path.join(certDir, 'key.pem')
   const certPath = path.join(certDir, 'cert.pem')
@@ -28,10 +34,6 @@ function getHttpsOptions() {
     } catch (error) {
       console.warn('Error reading certificate files, falling back to default HTTPS')
     }
-  } else {
-    console.warn('No SSL certificates found in .cert directory.')
-    console.warn('To generate certificates, run: node generate-cert.js')
-    console.warn('Or install mkcert: winget install FiloSottile.mkcert')
   }
 
   // Note: Vite's default HTTPS may have SSL version issues on Windows
@@ -48,7 +50,7 @@ function getHttpsOptions() {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: process.env.VERCEL ? '/' : './',
   build: {
     target: 'es2015',
     outDir: 'dist',
