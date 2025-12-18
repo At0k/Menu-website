@@ -1,0 +1,117 @@
+/* Sliced loader overlay */
+:root {
+  --slice-bg: #f2e313; /* tweak brand yellow */
+  --slice-lines: rgba(0, 0, 0, 0.12);
+}
+
+.loading-slices {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  z-index: 1200;
+  pointer-events: none;
+  contain: layout paint;
+  /* Avoid background peeking through sub-pixel seams */
+  background: var(--slice-bg);
+  overflow: hidden;
+}
+
+.loading-slices__slice {
+  flex: 1 1 0;
+  background: var(--slice-bg);
+  transform: translateY(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  /* Slight overlap to eliminate hairline gaps on some DPRs */
+  margin: 0 -0.5px;
+  /* subtle vertical separators reminiscent of the reference */
+  box-shadow: inset 1px 0 0 var(--slice-lines),
+    inset -1px 0 0 var(--slice-lines);
+}
+
+/* Only when there are 5 slices, make the middle three wider */
+.loading-slices--count-5 .loading-slices__slice:nth-child(2),
+.loading-slices--count-5 .loading-slices__slice:nth-child(3),
+.loading-slices--count-5 .loading-slices__slice:nth-child(4) {
+  flex: 1.6 1 0; /* tweak 1.6 as desired */
+}
+
+/* Centered brand + animated rule */
+.loading-slices__center {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 1210;
+  pointer-events: none;
+}
+
+.loading-slices__center-inner {
+  text-align: center;
+  transform: translateY(-6vh); /* slight lift like the reference */
+}
+
+.loading-slices__brand {
+  margin: 0;
+  font-weight: 600;
+  color: #0a0a0a;
+  letter-spacing: 0.02em;
+  font-size: clamp(22px, 2.6vw, 32px);
+}
+
+.loading-slices__rule {
+  margin: 10px auto 0;
+  width: clamp(200px, 22vw, 360px);
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.loading-slices__rule-progress {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #0a0a0a;
+  animation: ruleProgress 1.4s ease-in-out infinite;
+  transform-origin: left center;
+}
+
+@keyframes ruleProgress {
+  0%   { width: 0%;   opacity: 0.6; }
+  50%  { width: 70%;  opacity: 1;   }
+  100% { width: 100%; opacity: 0.85; }
+}
+
+/* When there are 3 slices, make the middle one wider */
+.loading-slices--count-3 .loading-slices__slice:nth-child(2) {
+  flex: 1.6 1 0;
+}
+
+/* Exit state: slide each slice up with a stagger */
+.loading-slices--exit .loading-slices__slice {
+  transform: translateY(-102%);
+}
+
+/* Timing: base duration + stagger by index */
+@for $i from 1 through 10 {
+  .loading-slices--exit .loading-slices__slice:nth-child(#{$i}) {
+    transition: transform 680ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: ($i - 1) * 70ms;
+  }
+}
+
+/* Optional fade-in on first paint */
+.loading-slices--enter {
+  animation: loaderFadeIn 220ms ease-out both;
+}
+
+@keyframes loaderFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
