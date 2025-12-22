@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename)
 
 // Function to get HTTPS options compatible with Windows
 // Only used in development mode, not during build
-function getHttpsOptions() {
+function getHttpsOptions(): { key: Buffer; cert: Buffer } | undefined {
   // Only enable HTTPS in development (not during build or on Vercel)
   if (process.env.NODE_ENV === 'production' || process.env.VERCEL) {
     return undefined
@@ -33,6 +33,7 @@ function getHttpsOptions() {
       }
     } catch (error) {
       console.warn('Error reading certificate files, falling back to default HTTPS')
+      return undefined
     }
   }
 
@@ -42,9 +43,8 @@ function getHttpsOptions() {
   // Then run: mkcert -install && mkcert localhost 127.0.0.1
   // And copy the generated files to .cert/key.pem and .cert/cert.pem
   
-  // For now, return true to attempt HTTPS (may show SSL errors)
-  // If you get ERR_SSL_VERSION_OR_CIPHER_MISMATCH, use mkcert instead
-  return true
+  // Return undefined if no certificates found (will use HTTP instead)
+  return undefined
 }
 
 // https://vitejs.dev/config/
