@@ -181,36 +181,38 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="nearby-attractions" data-aos="fade-up" data-aos-delay="200" style={{ gridTemplateColumns: '1fr 1fr' }}>
+            <div className="nearby-attractions" data-aos="fade-up" data-aos-delay="200">
               <h3>Nearby Attractions</h3>
-              <div className="attraction-item" style={{ alignItems: 'flex-start', textAlign: 'left' }}>
-                <div style={{ fontWeight: 600, fontSize: '1.1rem', marginBottom: 12, color: '#3a2a13' }}>Within 1 km:</div>
-                <ul style={{ paddingLeft: 18, margin: 0, color: '#3a2a13', fontSize: '1rem', lineHeight: 1.7 }}>
-                  <li>Flamingo Institute</li>
-                  <li>Stamford College</li>
-                  <li>KL International Schools</li>
-                  <li>Flamingo Hotel</li>
-                  <li>Great Eastern Mall</li>
-                  <li>Ampang Puteri & Gleneagles Specialist Hospital</li>
-                  <li>Ampang Point</li>
-                  <li>Ampang City Centre</li>
-                  <li>Darul Ehsan Golf Course</li>
-                  <li>NAEB Iranian Fine Cuisine Restaurant</li>
-                </ul>
-              </div>
-              <div className="attraction-item" style={{ alignItems: 'flex-start', textAlign: 'left' }}>
-                <div style={{ fontWeight: 600, fontSize: '1.1rem', marginBottom: 12, color: '#3a2a13' }}>Within 1 km – 4 km:</div>
-                <ul style={{ paddingLeft: 18, margin: 0, color: '#3a2a13', fontSize: '1rem', lineHeight: 1.7 }}>
-                  <li>Royal Selangor Golf Club</li>
-                  <li>Ampang Park LRT Station</li>
-                  <li>University of Technology Malaysia - UTM KL</li>
-                  <li>Dinner In The Sky Malaysia</li>
-                  <li>Zebra Square</li>
-                  <li>Avenue K Shopping Mall</li>
-                  <li>TREC KL</li>
-                  <li>Kuala Lumpur City Centre KLCC</li>
-                  <li>Aquaria KLCC</li>
-                </ul>
+              <div className="nearby-attractions-grid">
+                <div className="attraction-item">
+                  <div style={{ fontWeight: 600, fontSize: '1.1rem', marginBottom: 12, color: '#3a2a13' }}>Within 1 km:</div>
+                  <ul style={{ paddingLeft: 18, margin: 0, color: '#3a2a13', fontSize: '1rem', lineHeight: 1.7 }}>
+                    <li>Flamingo Institute</li>
+                    <li>Stamford College</li>
+                    <li>KL International Schools</li>
+                    <li>Flamingo Hotel</li>
+                    <li>Great Eastern Mall</li>
+                    <li>Ampang Puteri & Gleneagles Specialist Hospital</li>
+                    <li>Ampang Point</li>
+                    <li>Ampang City Centre</li>
+                    <li>Darul Ehsan Golf Course</li>
+                    <li>NAEB Iranian Fine Cuisine Restaurant</li>
+                  </ul>
+                </div>
+                <div className="attraction-item">
+                  <div style={{ fontWeight: 600, fontSize: '1.1rem', marginBottom: 12, color: '#3a2a13' }}>Within 1 km – 4 km:</div>
+                  <ul style={{ paddingLeft: 18, margin: 0, color: '#3a2a13', fontSize: '1rem', lineHeight: 1.7 }}>
+                    <li>Royal Selangor Golf Club</li>
+                    <li>Ampang Park LRT Station</li>
+                    <li>University of Technology Malaysia - UTM KL</li>
+                    <li>Dinner In The Sky Malaysia</li>
+                    <li>Zebra Square</li>
+                    <li>Avenue K Shopping Mall</li>
+                    <li>TREC KL</li>
+                    <li>Kuala Lumpur City Centre KLCC</li>
+                    <li>Aquaria KLCC</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

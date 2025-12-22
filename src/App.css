@@ -52,6 +52,10 @@
   margin: 0 auto;
   padding: 0 32px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 /* Section backgrounds and spacing */
@@ -133,6 +137,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2vw;
+  justify-items: center;
+  box-sizing: border-box;
 }
 .room-card {
   background: #fff;
@@ -410,21 +416,39 @@
   transform: scale(1.04);
 }
 .nearby-attractions {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
   max-width: 1200px;
-  margin: 2.5rem auto 0 auto;
-  padding: 0 2vw;
-  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 .nearby-attractions h3 {
-  grid-column: 1 / -1;
   font-family: var(--font-heading), serif;
   font-size: 2rem;
   color: #3a2a13;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   text-align: center;
+  width: 100%;
+}
+.nearby-attractions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: stretch;
 }
 .attraction-item {
   background: #fff;
@@ -435,13 +459,13 @@
   box-shadow: 0 8px 32px rgba(107,76,43,0.10);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-family: var(--font-body), sans-serif;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  text-align: center;
+  text-align: left;
   transition: box-shadow 0.2s, background 0.2s, border 0.2s, transform 0.15s;
 }
 .attraction-item:hover, .attraction-item:focus {
@@ -472,16 +496,20 @@
 }
 @media (max-width: 900px) {
   .nearby-attractions {
+    padding: 0;
+    width: 100%;
+  }
+  .nearby-attractions-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 0 1vw;
+    gap: 1.5rem;
+    max-width: 100%;
+    padding: 0;
   }
 }
 @media (max-width: 600px) {
-  .nearby-attractions {
+  .nearby-attractions-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 0 0.5vw;
+    gap: 1.5rem;
   }
 }
 
@@ -589,17 +617,43 @@
 @media (max-width: 1200px) {
   .rooms-grid {
     gap: 2rem;
-    padding: 0 1vw;
+    padding: 0 2rem;
+    max-width: 100%;
   }
   .room-card {
-    width: 90vw;
+    width: 100%;
     max-width: 420px;
     min-height: 420px;
   }
   .section-title {
     font-size: 2.5rem;
-    padding-left: 2vw;
-    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .section-content {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .rooms-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .room-card {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .section-content {
+    padding: 0 1.5rem;
   }
 }
 @media (max-width: 700px) {
@@ -607,21 +661,23 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 100%;
   }
 
   .room-card {
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
     width: 100%;
   }
 
   .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
+  }
+  
+  .section-content {
+    padding: 0 1rem;
   }
 
   .location-content {
@@ -638,18 +694,15 @@
     max-width: 400px;
   }
 
-  .nearby-attractions {
+  .nearby-attractions-grid {
     grid-template-columns: 1fr !important;
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
   }
 
   .attraction-item {
     padding: 1.5rem;
     width: 100%;
-    max-width: 400px;
   }
 }
 @media (max-width: 600px) {
@@ -668,9 +721,6 @@
 
   .section-content {
     padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .rooms-section,
@@ -681,12 +731,20 @@
   }
 
   .nearby-attractions {
-    padding: 1.5rem;
+    padding: 0;
     width: 100%;
+    margin: 2rem auto 0 auto;
+  }
+  
+  .nearby-attractions-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 0;
   }
 
   .attraction-item {
-    padding: 1rem;
+    padding: 1.5rem;
     width: 100%;
   }
 
