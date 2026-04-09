@@ -7,10 +7,16 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Production
 node_modules
 dist
 dist-ssr
 *.local
+
+# Environment
+.env
+.env.*
+!.env.example
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +28,16 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Agent Metadata (CRITICAL for security)
+.gemini/
+.vercel
+.turbo
+.next
+.cache
+.eslintcache
+.vite
+
+# OS Files
+Thumbs.db
+desktop.ini

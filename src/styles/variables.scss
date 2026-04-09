@@ -1,0 +1,52 @@
+// ═══════════════════════════════════════════════
+// SHARED DESIGN TOKENS
+// Import this file in any page SCSS that needs
+// access to the brand font, sizes, or colors.
+//
+// Usage: @use '../../styles/variables' as *;
+// ═══════════════════════════════════════════════
+
+// ─── Typography ─────────────────────────────────
+$font-brand:   'Afacad Flux', sans-serif;
+
+// Fluid type scale (clamp — min | preferred | max)
+$type-hero:    clamp(3rem,   7vw, 7rem);    // Hero title
+$type-title:   clamp(2rem,   4vw, 3.4rem);  // Section heading
+$type-sub:     clamp(1.5rem, 3vw, 2.5rem);  // Sub-heading
+$type-body:    clamp(0.9rem, 2vw, 1.1rem);  // Body / description
+$type-label:   0.85rem;                     // Labels, captions, tags
+
+// Letter spacing
+$ls-wide:      0.15em;
+$ls-normal:    0.05em;
+$ls-tight:     0.02em;
+
+// ─── Brand Colors ───────────────────────────────
+$color-brand-primary:  #7c4d6a;   // Muted plum — headers, accents
+$color-brand-accent:   #bfa2c7;   // Soft lavender — highlights
+
+// ─── Neutral Palette ────────────────────────────
+$color-white:          #ffffff;
+$color-black:          #000000;
+$color-bg-page:        #ffffff;   // Default page background
+$color-bg-alt:         #f2f2f2;   // Alternate section bg (e.g. Location)
+$color-bg-footer:      #fff2fc;   // ArtePlus footer tint
+$color-text:           #000000;
+$color-text-dim:       rgba(0, 0, 0, 0.6);
+$color-border:         rgba(0, 0, 0, 0.15);
+$color-overlay-dark:   rgba(0, 0, 0, 0.35);  // Hero overlay
+$color-overlay-light:  rgba(255, 255, 255, 0.88); // CTA pill
+
+// ─── Spacing & Shape ────────────────────────────
+$radius-card:  10px;
+$radius-pill:  3rem;
+$radius-btn:   6px;
+
+// ─── Transitions ────────────────────────────────
+$t-fast:    0.2s ease;
+$t-base:    0.3s ease;
+$t-slow:    0.5s ease;
+
+// ─── Breakpoints ────────────────────────────────
+$bp-md:  768px;
+$bp-lg:  1024px;

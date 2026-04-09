@@ -1,0 +1,5940 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "MC6RN",
+      "x": -8593,
+      "y": 2784,
+      "name": "Coming Soon page",
+      "clip": true,
+      "width": 2677,
+      "height": 2226,
+      "fill": "#2c2c2cff",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "DRclb",
+          "x": 477,
+          "y": 276,
+          "name": "ASTRUM PAGE",
+          "clip": true,
+          "width": 1440,
+          "height": 785,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "NyvYs",
+              "x": 0.25041884546590154,
+              "y": -0.11828946377742966,
+              "rotation": -360.00000000000006,
+              "fill": {
+                "type": "image",
+                "opacity": 0.5,
+                "enabled": true,
+                "url": "./public/ASTRUM-AMPANG.jpg",
+                "mode": "fill"
+              },
+              "width": 1440,
+              "height": 785
+            },
+            {
+              "type": "text",
+              "id": "sgjgr",
+              "x": 866,
+              "y": 375,
+              "fill": "#ffffffb3",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 4,
+                  "y": 8
+                },
+                "blur": 4
+              },
+              "content": "AMPANG",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 120,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "lOH2X",
+              "x": 170,
+              "y": 198,
+              "fill": "#ffffffb3",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 4,
+                  "y": 8
+                },
+                "blur": 4
+              },
+              "textGrowth": "fixed-width-height",
+              "width": 877,
+              "height": 177,
+              "content": "ASTRUM",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 150,
+              "fontWeight": "600",
+              "letterSpacing": 5
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 30,
+              "id": "02cc4",
+              "x": 609,
+              "y": 596,
+              "fill": "#818181b3",
+              "width": 221,
+              "height": 61
+            },
+            {
+              "type": "text",
+              "id": "JzZsj",
+              "x": 623,
+              "y": 607,
+              "fill": "#ffffff",
+              "content": "COMING SOON",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 30,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VLI5n",
+          "x": 477,
+          "y": 1263,
+          "name": "PULAU PAGE",
+          "clip": true,
+          "width": 1440,
+          "height": 785,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "Nq9xc",
+              "x": 0,
+              "y": 2.2737367544323206e-13,
+              "rotation": -360,
+              "fill": {
+                "type": "image",
+                "opacity": 0.5,
+                "enabled": true,
+                "url": "./public/Semporna.jpg",
+                "mode": "fill"
+              },
+              "width": 1440,
+              "height": 785
+            },
+            {
+              "type": "text",
+              "id": "PACeE",
+              "x": 768,
+              "y": 375,
+              "fill": "#ffffffb3",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 4,
+                  "y": 8
+                },
+                "blur": 4
+              },
+              "content": "SEMPORNA",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 120,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "kaf4P",
+              "x": 170,
+              "y": 198,
+              "fill": "#ffffffb3",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 4,
+                  "y": 8
+                },
+                "blur": 4
+              },
+              "textGrowth": "fixed-width-height",
+              "width": 877,
+              "height": 177,
+              "content": "PULAU",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 150,
+              "fontWeight": "600",
+              "letterSpacing": 5
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 30,
+              "id": "eJbko",
+              "x": 609,
+              "y": 596,
+              "fill": "#818181b3",
+              "width": 221,
+              "height": 61
+            },
+            {
+              "type": "text",
+              "id": "PLZVL",
+              "x": 623,
+              "y": 607,
+              "fill": "#ffffff",
+              "content": "COMING SOON",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 30,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QrC7G",
+      "x": -4578,
+      "y": -361,
+      "name": "Arte Plus Page",
+      "clip": true,
+      "width": 10525,
+      "height": 8802,
+      "fill": "#2c2c2cff",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "DOVox",
+          "x": 8054,
+          "y": 111,
+          "name": "Arte Plus Page Phone Size",
+          "clip": true,
+          "width": 600,
+          "height": 6840,
+          "fill": "#FFFFFF",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "7PJEP",
+              "x": 0,
+              "y": 5320,
+              "name": "Nearby Attraction",
+              "clip": true,
+              "width": 600,
+              "height": 1186,
+              "fill": "#FFFFFF",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Dju1l",
+                  "x": 3,
+                  "y": 50,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "Nearby Attractions",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "CF6lA",
+                  "x": 26,
+                  "y": 154,
+                  "fill": "#ffffffff",
+                  "width": 548,
+                  "height": 440,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "HXX2s",
+                  "x": 70,
+                  "y": 449,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 202,
+                  "content": "- Ampang Point Shopping Center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "mv7db",
+                  "x": 70,
+                  "y": 359,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Village Grocer @ M City Ampang",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "zMtUV",
+                  "x": 70,
+                  "y": 278,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Great Eastern Mall",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "KzQmQ",
+                  "x": 26,
+                  "y": 645,
+                  "fill": "#ffffffff",
+                  "width": 548,
+                  "height": 440,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "kmOqY",
+                  "x": 70,
+                  "y": 175,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 501,
+                  "content": "WITHIN 1 KM",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "K1iXU",
+                  "x": 73.6521739130435,
+                  "y": 666,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 442,
+                  "content": "WITHIN 1 - 4 KM",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "2NT1l",
+                  "x": 317,
+                  "y": 278,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Taman Tasik Ampang Hilir",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "iLHxH",
+                  "x": 317,
+                  "y": 359,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Gleneagles Hospital ",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "kDWlw",
+                  "x": 317,
+                  "y": 449,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Suzi's Corner",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "D6R1x",
+                  "x": 73.6521739130435,
+                  "y": 769,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 224,
+                  "content": "- Royal Selangor Polo Club",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "63G5B",
+                  "x": 73.6521739130435,
+                  "y": 850,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 212,
+                  "content": "- Darul Ehsan Golf Club",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "MQZkj",
+                  "x": 73.6521739130435,
+                  "y": 940,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 224,
+                  "content": "- The LINC KL",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "9kFh4",
+                  "x": 320.7375201288246,
+                  "y": 940,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 224,
+                  "content": "- Jelatek / Ampang LRT Station",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "XEq8j",
+                  "x": 320.7375201288246,
+                  "y": 850,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 212,
+                  "content": "- Taman Tasik Datuk Keramat",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "UjZ0d",
+                  "x": 320.7375201288246,
+                  "y": 769,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 224,
+                  "content": "- KLCC Park",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rtux0",
+              "x": 0,
+              "y": 4078,
+              "name": "Maps",
+              "clip": true,
+              "width": 600,
+              "height": 1242,
+              "fill": "#f2f2f280",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "HUXu2",
+                  "x": 63,
+                  "y": 213,
+                  "fill": "#CCCCCC",
+                  "width": 477,
+                  "height": 557,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "fvmeD",
+                  "x": 43,
+                  "y": 42,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "THE NEIGHBORHOOD",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "fYr2B",
+                  "x": 43,
+                  "y": 115,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width-height",
+                  "width": 455,
+                  "height": 90,
+                  "content": "Positioned at the epicenter of culture and commerce, you gateway to the city's finest landmarks.",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "u20i3",
+                  "x": 77,
+                  "y": 907,
+                  "fill": "#ffffffff",
+                  "width": 477,
+                  "height": 278,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "NGXVc",
+                  "x": 247,
+                  "y": 462,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 110,
+                  "content": "Maps",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "wHdQ6",
+                  "x": 118.47826086956502,
+                  "y": 1026,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 221,
+                  "content": "- KL Central",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Y8rnC",
+                  "x": 118.47826086956502,
+                  "y": 962,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 221,
+                  "content": "- KLIA/Subang Airport",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "LUu8c",
+                  "x": 118.47826086956502,
+                  "y": 1091,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "- Terminal Bersepadu Selatan",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Vbdxt",
+                  "x": 348.144927536232,
+                  "y": 962,
+                  "fill": "#40404099",
+                  "textGrowth": "fixed-width",
+                  "width": 180,
+                  "content": "45 MINS",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "D8LdS",
+                  "x": 348.144927536232,
+                  "y": 1026,
+                  "fill": "#40404099",
+                  "textGrowth": "fixed-width",
+                  "width": 180,
+                  "content": "30 MINS",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "n23L4",
+                  "x": 348.144927536232,
+                  "y": 1091,
+                  "fill": "#40404099",
+                  "textGrowth": "fixed-width",
+                  "width": 180,
+                  "content": "20 MINS",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "HwPfA",
+                  "x": 214,
+                  "y": 797,
+                  "fill": "#ffffffff",
+                  "width": 88,
+                  "height": 85,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "WefHa",
+                  "x": 332,
+                  "y": 797,
+                  "fill": "#ffffffff",
+                  "width": 86,
+                  "height": 85,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FelTj",
+              "x": 0,
+              "y": 3576,
+              "name": "Amenities",
+              "clip": true,
+              "width": 600,
+              "height": 443,
+              "fill": "#FFFFFF",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Cm9qP",
+                  "x": 0,
+                  "y": 74,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "Amenities",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FtYUd",
+                  "x": 52,
+                  "y": 187,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 121,
+                  "content": "Pool",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "8aqT1",
+                  "x": 215.46141095759958,
+                  "y": 187,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 121,
+                  "content": "Gym",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "8k6LK",
+                  "x": 222.1141552511417,
+                  "y": 275,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 121,
+                  "content": "Wifi",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "8ade4",
+                  "x": 41,
+                  "y": 275,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 156,
+                  "content": "Free Parking",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "EUjtc",
+                  "x": 350.05175038051766,
+                  "y": 187,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 198,
+                  "content": "In-Suite Laundry",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "GNhgM",
+                  "x": 360,
+                  "y": 275,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 198,
+                  "content": "24/7 Mini Market",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Yl41N",
+              "x": 0,
+              "y": 2160,
+              "name": "Collection Suite",
+              "clip": true,
+              "width": 600,
+              "height": 1416,
+              "fill": "#ffffffff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QCscX",
+                  "x": 27,
+                  "y": 33,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 354,
+                  "content": "Signature Suites",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "OIS4p",
+                  "x": 27,
+                  "y": 118,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 607,
+                  "content": "Cureated living spaces designed for the modern traveler. Select your perfect stay.",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "id": "eZ8SO",
+                  "x": 148,
+                  "y": 215,
+                  "fill": "#edededff",
+                  "width": 300,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "8dMBr",
+                  "x": 148,
+                  "y": 604,
+                  "fill": "#eeeeeeff",
+                  "width": 300,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "dATHz",
+                  "x": 148,
+                  "y": 993,
+                  "fill": "#e7e7e7ff",
+                  "width": 300,
+                  "height": 300
+                },
+                {
+                  "type": "text",
+                  "id": "ksxJ2",
+                  "x": 151,
+                  "y": 515,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "The Studio",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "XIniO",
+                  "x": 148,
+                  "y": 908,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "The Duplex",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ZYTOV",
+                  "x": 148,
+                  "y": 1297,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "The Triplex",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ddU4s",
+                  "x": 151,
+                  "y": 571,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "1 Bedroom",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "1sPdJ",
+                  "x": 148,
+                  "y": 960,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "2 Bedroom",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "jPuOE",
+                  "x": 148,
+                  "y": 1349,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "3 Bedroom",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "jfHWa",
+              "x": 0,
+              "y": 1792,
+              "fill": [
+                {
+                  "type": "image",
+                  "opacity": 0.8,
+                  "enabled": true,
+                  "url": "./public/471119343.jpg",
+                  "mode": "fill"
+                },
+                "#00000033"
+              ],
+              "width": 600,
+              "height": 368,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              }
+            },
+            {
+              "type": "frame",
+              "id": "naR2x",
+              "x": 0,
+              "y": 0,
+              "name": "Intro",
+              "clip": true,
+              "width": 1023,
+              "height": 682,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "W7KaV",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Video",
+                  "fill": [
+                    {
+                      "type": "image",
+                      "opacity": 0.8,
+                      "enabled": true,
+                      "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                      "mode": "fill"
+                    },
+                    "#00000073"
+                  ],
+                  "width": 600,
+                  "height": 682
+                },
+                {
+                  "type": "text",
+                  "id": "tpjZw",
+                  "x": 172,
+                  "y": 343,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "AMPANG",
+                  "textAlign": "center",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 70,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "YNwUm",
+                  "x": 66,
+                  "y": 200,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 466,
+                  "height": 177,
+                  "content": "ARTE PLUS",
+                  "textAlign": "center",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 100,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "Qtwcu",
+                  "x": 188,
+                  "y": 561,
+                  "fill": "#cd7394b3",
+                  "width": 221,
+                  "height": 61
+                },
+                {
+                  "type": "text",
+                  "id": "MPqck",
+                  "x": 232,
+                  "y": 572,
+                  "fill": "#ffffff",
+                  "content": "View Suites",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "m55kF",
+              "x": 0,
+              "y": 682,
+              "name": "About",
+              "clip": true,
+              "width": 600,
+              "height": 1110,
+              "fill": "#ffffff",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qMzN2",
+                  "x": 92,
+                  "y": 259,
+                  "fill": "#000000",
+                  "content": "Welcome to ALG HOTEL",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "JFAY8",
+                  "x": 84,
+                  "y": 335,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 432,
+                  "content": "Dear Valued Guest,\n\nWelcome to the Affordable Luxury Group (ALG), your urban sanctuary in the heart of Kuala Lumpur, where seamless comfort and the warmth of our hospitality create a stay like no other.\n\nOur passion for service and atention to detail are the heart of everything we do from our thoughtfully designed suites at Arte Plus to our exclusive limosine services. Please feel free to reach out to any member of our team if there is anything we can do to make your experience even more exceptional.\n\nThank you for choosing ALG-Suite. We cannot wait to share our perfect blend of comfort and sophisatication with you.",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "id": "E1AJJ",
+                  "x": 206,
+                  "y": 63,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/LogoOnly.png",
+                    "mode": "fill"
+                  },
+                  "width": 188,
+                  "height": 179
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "63F45",
+              "x": 0,
+              "y": 0,
+              "name": "Header",
+              "clip": true,
+              "width": 600,
+              "height": 108,
+              "fill": "#ffffff00",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "r0L2O",
+                  "x": 196,
+                  "y": 25,
+                  "fill": "#ffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "ALG SUITE\nResort & Tour",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "APk1F",
+                  "x": 495,
+                  "y": 39,
+                  "fill": "#CCCCCC",
+                  "width": 69,
+                  "height": 3
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "Y0aMu",
+                  "x": 495,
+                  "y": 52,
+                  "fill": "#CCCCCC",
+                  "width": 69,
+                  "height": 3
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "Mlp3S",
+                  "x": 495,
+                  "y": 65,
+                  "fill": "#CCCCCC",
+                  "width": 69,
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w9h5Y",
+              "x": 0,
+              "y": 6506,
+              "name": "Footer",
+              "clip": true,
+              "width": 600,
+              "height": 342,
+              "fill": "#4a4a4aff",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "top": 1,
+                  "bottom": 1
+                },
+                "fill": "#00000033"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gcgUh",
+                  "x": 39,
+                  "y": 58,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "ALG SUITE\nResort & Tour",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "SJyXO",
+                  "x": 39,
+                  "y": 147,
+                  "fill": "#ffffff99",
+                  "textGrowth": "fixed-width-height",
+                  "width": 207,
+                  "height": 156,
+                  "content": "Providing exceptional stays in the heart of Kuala Lumpur's most iconic architectural landmark.",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "eVuAG",
+                  "x": 264,
+                  "y": 74,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "Quick Links",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 22,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "0XbR1",
+                  "x": 264,
+                  "y": 112,
+                  "fill": "#ffffff99",
+                  "textGrowth": "fixed-width-height",
+                  "width": 166,
+                  "height": 45,
+                  "content": "Our Suites",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Dy2mx",
+                  "x": 264,
+                  "y": 162,
+                  "fill": "#ffffff99",
+                  "textGrowth": "fixed-width-height",
+                  "width": 166,
+                  "height": 45,
+                  "content": "Amenities",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "kcofp",
+                  "x": 264,
+                  "y": 208,
+                  "fill": "#ffffff99",
+                  "textGrowth": "fixed-width-height",
+                  "width": 166,
+                  "height": 45,
+                  "content": "Location",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "JJmBe",
+                  "x": 432,
+                  "y": 74,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "Contact",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 22,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "gVB5T",
+                  "x": 430,
+                  "y": 147,
+                  "fill": "#ffffff99",
+                  "textGrowth": "fixed-width-height",
+                  "width": 145,
+                  "height": 45,
+                  "content": "Jalan Ampang, 55000 Kuala Lumpur, Malaysia",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Rz9vq",
+                  "x": 430,
+                  "y": 235,
+                  "fill": "#ffffff99",
+                  "textGrowth": "fixed-width-height",
+                  "width": 179,
+                  "height": 45,
+                  "content": "+60138601915",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TWGMn",
+          "x": 6759,
+          "y": 111,
+          "name": "Header open",
+          "clip": true,
+          "width": 1023,
+          "height": 682,
+          "fill": "#ffffffff",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "rBJkY",
+              "x": 408,
+              "y": 21,
+              "fill": "#323232ff",
+              "textGrowth": "fixed-width",
+              "width": 207,
+              "content": "ALG SUITE\nResort & Tour",
+              "textAlign": "center",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 30,
+              "id": "YSTbi",
+              "x": 911,
+              "y": 75.3523450683712,
+              "rotation": -1040,
+              "fill": "#CCCCCC",
+              "width": 69,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 30,
+              "id": "RM2lH",
+              "x": 913.0562392596225,
+              "y": 31.049038105676658,
+              "rotation": -400,
+              "fill": "#CCCCCC",
+              "width": 69,
+              "height": 3
+            },
+            {
+              "type": "text",
+              "id": "hOg54",
+              "x": 468,
+              "y": 238,
+              "fill": "#4f4f4fff",
+              "textGrowth": "fixed-width",
+              "width": 86,
+              "content": "Suites",
+              "textAlign": "center",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "pPA9J",
+              "x": 461,
+              "y": 183,
+              "fill": "#4f4f4fff",
+              "textGrowth": "fixed-width",
+              "width": 101,
+              "content": "About Us",
+              "textAlign": "center",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "3i8hg",
+              "x": 461,
+              "y": 296,
+              "fill": "#4f4f4fff",
+              "textGrowth": "fixed-width",
+              "width": 102,
+              "content": "Location",
+              "textAlign": "center",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "CetrL",
+              "x": 461,
+              "y": 357,
+              "fill": "#4f4f4fff",
+              "textGrowth": "fixed-width",
+              "width": 102,
+              "content": "Amenities",
+              "textAlign": "center",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "ayqae",
+              "x": 461,
+              "y": 417,
+              "fill": "#4f4f4fff",
+              "textGrowth": "fixed-width",
+              "width": 102,
+              "content": "Contact",
+              "textAlign": "center",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NSoFi",
+          "x": 5651,
+          "y": 111,
+          "name": "Arte Plus Page Tablet Size",
+          "clip": true,
+          "width": 1023,
+          "height": 6921,
+          "fill": "#FFFFFF",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "9Krpq",
+              "x": 0,
+              "y": 6588,
+              "name": "Footer",
+              "clip": true,
+              "width": 1023,
+              "height": 333,
+              "fill": "#4a4a4aff",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "top": 1,
+                  "bottom": 1
+                },
+                "fill": "#00000033"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "X0ECi",
+                  "x": 39,
+                  "y": 58,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "ALG SUITE\nResort & Tour",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "tLdy8",
+                  "x": 39,
+                  "y": 152,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 384,
+                  "height": 156,
+                  "content": "Providing exceptional stays in the heart of Kuala Lumpur's most iconic architectural landmark.",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Xocz4",
+                  "x": 454,
+                  "y": 58,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "Quick Links",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "MZMT3",
+                  "x": 465,
+                  "y": 124,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 166,
+                  "height": 45,
+                  "content": "Our Suites",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "IGOd9",
+                  "x": 465,
+                  "y": 174,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 166,
+                  "height": 45,
+                  "content": "Amenities",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "ngz73",
+                  "x": 465,
+                  "y": 220,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 166,
+                  "height": 45,
+                  "content": "Location",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "yD9dU",
+                  "x": 723,
+                  "y": 58,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "Contact",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "dWN7y",
+                  "x": 731,
+                  "y": 124,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 292,
+                  "height": 45,
+                  "content": "Jalan Ampang, 55000 Kuala Lumpur, Malaysia",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "eIQdx",
+                  "x": 731,
+                  "y": 196,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 207,
+                  "height": 45,
+                  "content": "+60138601915",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "4fCxj",
+              "x": 0,
+              "y": 5320,
+              "name": "Nearby Attraction",
+              "clip": true,
+              "width": 1023,
+              "height": 1198,
+              "fill": "#FFFFFF",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dbUVV",
+                  "x": 213,
+                  "y": 57,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "Nearby Attractions",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "Ds3mV",
+                  "x": 201,
+                  "y": 199,
+                  "fill": "#ffffffff",
+                  "width": 621,
+                  "height": 440,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "1IVMM",
+                  "x": 245,
+                  "y": 494,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Ampang Point Shopping Center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "i2KYl",
+                  "x": 245,
+                  "y": 404,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Village Grocer @ M City Ampang",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "aaqVG",
+                  "x": 245,
+                  "y": 323,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Great Eastern Mall",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "57jXx",
+                  "x": 201,
+                  "y": 701,
+                  "fill": "#ffffffff",
+                  "width": 621,
+                  "height": 440,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "Uw0hj",
+                  "x": 245,
+                  "y": 220,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 501,
+                  "content": "WITHIN 1 KM",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Noasn",
+                  "x": 255,
+                  "y": 722,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 501,
+                  "content": "WITHIN 1 - 4 KM",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "oqnTS",
+                  "x": 525,
+                  "y": 323,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Taman Tasik Ampang Hilir",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "b7MIy",
+                  "x": 525,
+                  "y": 404,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Gleneagles Hospital ",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "iBVD0",
+                  "x": 525,
+                  "y": 494,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Suzi's Corner",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "2STqG",
+                  "x": 255,
+                  "y": 825,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Royal Selangor Polo Club",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "sGSaD",
+                  "x": 255,
+                  "y": 906,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Darul Ehsan Golf Club",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "TsAmq",
+                  "x": 255,
+                  "y": 996,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- The LINC KL",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "USEA5",
+                  "x": 535,
+                  "y": 996,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Jelatek / Ampang LRT Station",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "uFiBy",
+                  "x": 535,
+                  "y": 906,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Taman Tasik Datuk Keramat",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "hcQtQ",
+                  "x": 535,
+                  "y": 825,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- KLCC Park",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C0r0S",
+              "x": 0,
+              "y": 4078,
+              "name": "Maps",
+              "clip": true,
+              "width": 1023,
+              "height": 1242,
+              "fill": "#f2f2f280",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "3OUmY",
+                  "x": 77,
+                  "y": 213,
+                  "fill": "#CCCCCC",
+                  "width": 869,
+                  "height": 557,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "MgAyv",
+                  "x": 73,
+                  "y": 42,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "THE NEIGHBORHOOD",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "w9bQy",
+                  "x": 73,
+                  "y": 115,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width-height",
+                  "width": 684,
+                  "height": 90,
+                  "content": "Positioned at the epicenter of culture and commerce, you gateway to the city's finest landmarks.",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "qoR81",
+                  "x": 201,
+                  "y": 922,
+                  "fill": "#ffffffff",
+                  "width": 621,
+                  "height": 278,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "eZ57g",
+                  "x": 412,
+                  "y": 462,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Maps",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bD72G",
+                  "x": 255,
+                  "y": 1041,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 288,
+                  "content": "- KL Central",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "J32Eq",
+                  "x": 255,
+                  "y": 977,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 288,
+                  "content": "- KLIA/Subang Airport",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "OQDXR",
+                  "x": 255,
+                  "y": 1106,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 299,
+                  "content": "- Terminal Bersepadu Selatan",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "dQNzC",
+                  "x": 554,
+                  "y": 977,
+                  "fill": "#40404099",
+                  "textGrowth": "fixed-width",
+                  "width": 234,
+                  "content": "45 MINS",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ikpyb",
+                  "x": 554,
+                  "y": 1041,
+                  "fill": "#40404099",
+                  "textGrowth": "fixed-width",
+                  "width": 234,
+                  "content": "30 MINS",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FDn8N",
+                  "x": 554,
+                  "y": 1106,
+                  "fill": "#40404099",
+                  "textGrowth": "fixed-width",
+                  "width": 234,
+                  "content": "20 MINS",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "F8cMQ",
+                  "x": 201,
+                  "y": 800,
+                  "fill": "#ffffffff",
+                  "width": 299,
+                  "height": 85,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "Fv0eU",
+                  "x": 522,
+                  "y": 800,
+                  "fill": "#ffffffff",
+                  "width": 300,
+                  "height": 85,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "0e3Xz",
+                  "x": 251,
+                  "y": 819,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Waze",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 35,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "N9IdY",
+                  "x": 571,
+                  "y": 819,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Maps",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 35,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pfE83",
+              "x": 0,
+              "y": 3531,
+              "name": "Amenities",
+              "clip": true,
+              "width": 1023,
+              "height": 547,
+              "fill": "#FFFFFF",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nPfD6",
+                  "x": 0,
+                  "y": 74,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 1023,
+                  "content": "Amenities",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "z8IKX",
+                  "x": 109,
+                  "y": 224,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 148,
+                  "content": "Pool",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "jHyjh",
+                  "x": 418.36221455063946,
+                  "y": 224,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 148,
+                  "content": "Gym",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "E6Qwt",
+                  "x": 423.5534359369342,
+                  "y": 406,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 148,
+                  "content": "Wifi",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "u5OIf",
+                  "x": 109,
+                  "y": 406,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 191,
+                  "content": "Free Parking",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "gfgba",
+                  "x": 671.2488563687127,
+                  "y": 224,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 243,
+                  "content": "In-Suite Laundry",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "SBxGb",
+                  "x": 671.2488563687127,
+                  "y": 406,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 243,
+                  "content": "24/7 Mini Market",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jhVAu",
+              "x": 0,
+              "y": 2598,
+              "name": "Collection Suite",
+              "clip": true,
+              "width": 1023,
+              "height": 933,
+              "fill": "#ffffffff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XAzxJ",
+                  "x": 31,
+                  "y": 192,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 349,
+                  "content": "Signature Suites",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "4O7Qj",
+                  "x": 31,
+                  "y": 277,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "Cureated living spaces designed for the modern traveler. Select your perfect stay.",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "id": "lmY9W",
+                  "x": 31,
+                  "y": 369,
+                  "fill": "#edededff",
+                  "width": 300,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ZP7QZ",
+                  "x": 361,
+                  "y": 369,
+                  "fill": "#eeeeeeff",
+                  "width": 300,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "BdQ9N",
+                  "x": 693,
+                  "y": 369,
+                  "fill": "#e7e7e7ff",
+                  "width": 300,
+                  "height": 300
+                },
+                {
+                  "type": "text",
+                  "id": "4R0ho",
+                  "x": 34,
+                  "y": 669,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "The Studio",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "AHUyJ",
+                  "x": 361,
+                  "y": 673,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "The Duplex",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bNjDn",
+                  "x": 693,
+                  "y": 673,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "The Triplex",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "GSWUH",
+                  "x": 34,
+                  "y": 725,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "1 Bedroom",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "ymw7H",
+                  "x": 361,
+                  "y": 725,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "2 Bedroom",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "eCusb",
+                  "x": 693,
+                  "y": 725,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "3 Bedroom",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "dQfZe",
+              "x": 0,
+              "y": 2001,
+              "fill": [
+                {
+                  "type": "image",
+                  "opacity": 0.8,
+                  "enabled": true,
+                  "url": "./public/471119343.jpg",
+                  "mode": "fill"
+                },
+                "#00000033"
+              ],
+              "width": 1023,
+              "height": 597,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              }
+            },
+            {
+              "type": "frame",
+              "id": "M59je",
+              "x": 0,
+              "y": 0,
+              "name": "Intro",
+              "clip": true,
+              "width": 1023,
+              "height": 682,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "uFvlI",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Video",
+                  "fill": [
+                    {
+                      "type": "image",
+                      "opacity": 0.8,
+                      "enabled": true,
+                      "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                      "mode": "fill"
+                    },
+                    "#00000073"
+                  ],
+                  "width": 1023,
+                  "height": 682
+                },
+                {
+                  "type": "text",
+                  "id": "hWiub",
+                  "x": 576,
+                  "y": 363,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "AMPANG",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 70,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "3Ge8r",
+                  "x": 149,
+                  "y": 198,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 853,
+                  "height": 177,
+                  "content": "ARTE PLUS",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 100,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "bBffS",
+                  "x": 401,
+                  "y": 567,
+                  "fill": "#cd7394b3",
+                  "width": 221,
+                  "height": 61
+                },
+                {
+                  "type": "text",
+                  "id": "pqPFS",
+                  "x": 445,
+                  "y": 578,
+                  "fill": "#ffffff",
+                  "content": "View Suites",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "4Zi9D",
+              "x": 0,
+              "y": 0,
+              "name": "Header",
+              "clip": true,
+              "width": 1023,
+              "height": 108,
+              "fill": "#ffffff00",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Fz2nT",
+                  "x": 408,
+                  "y": 21,
+                  "fill": "#ffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "ALG SUITE\nResort & Tour",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "XBrNO",
+                  "x": 929,
+                  "y": 44,
+                  "fill": "#CCCCCC",
+                  "width": 39,
+                  "height": 2
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "LfqQl",
+                  "x": 929,
+                  "y": 52.9655172413793,
+                  "fill": "#CCCCCC",
+                  "width": 39,
+                  "height": 2
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "H5u1t",
+                  "x": 929,
+                  "y": 61.93103448275863,
+                  "fill": "#CCCCCC",
+                  "width": 39,
+                  "height": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kKmOK",
+              "x": 0,
+              "y": 682,
+              "name": "About",
+              "clip": true,
+              "width": 1023,
+              "height": 1319,
+              "fill": "#ffffff",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8x8UJ",
+                  "x": 252,
+                  "y": 252.5,
+                  "fill": "#000000",
+                  "content": "Welcome to ALG HOTEL",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "PZr18",
+                  "x": 213,
+                  "y": 357.5,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "Dear Valued Guest,\n\nWelcome to the Affordable Luxury Group (ALG), your urban sanctuary in the heart of Kuala Lumpur, where seamless comfort and the warmth of our hospitality create a stay like no other.\n\nOur passion for service and atention to detail are the heart of everything we do from our thoughtfully designed suites at Arte Plus to our exclusive limosine services. Please feel free to reach out to any member of our team if there is anything we can do to make your experience even more exceptional.\n\nThank you for choosing ALG-Suite. We cannot wait to share our perfect blend of comfort and sophisatication with you.",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "id": "wn2xS",
+                  "x": 418,
+                  "y": 73.5,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/LogoOnly.png",
+                    "mode": "fill"
+                  },
+                  "width": 188,
+                  "height": 179
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 10,
+                  "id": "wimvC",
+                  "x": 629,
+                  "y": 988,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/1.4-Arte_Tower-1-Lobby.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 284,
+                  "height": 284
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 10,
+                  "id": "egGrt",
+                  "x": 321,
+                  "y": 988,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                    "mode": "fill"
+                  },
+                  "width": 284,
+                  "height": 284
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 10,
+                  "id": "8SVJX",
+                  "x": 13,
+                  "y": 988,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/623247993.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 284,
+                  "height": 284
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 10,
+                  "id": "mDprL",
+                  "x": 937,
+                  "y": 988,
+                  "name": "2020_04_Project_Layout18.jpg",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/2020_04_Project_Layout18.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 284,
+                  "height": 284
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DCu2P",
+          "x": 3825,
+          "y": 2858,
+          "name": "Collection Suite Respond",
+          "clip": true,
+          "width": 1440,
+          "height": 933,
+          "fill": "#ffffffff",
+          "effect": {
+            "type": "background_blur",
+            "radius": 50
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "mQgNR",
+              "x": 74,
+              "y": 128,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 349,
+              "content": "Signature Suites",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 55,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "kz9KL",
+              "x": 74,
+              "y": 213,
+              "fill": "#00000099",
+              "textGrowth": "fixed-width",
+              "width": 598,
+              "content": "Cureated living spaces designed for the modern traveler. Select your perfect stay.",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "Um9AP",
+              "x": 74,
+              "y": 334,
+              "fill": "#edededff",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "type": "rectangle",
+              "id": "dhZB6",
+              "x": 519.2401995723449,
+              "y": 334,
+              "fill": "#eeeeeeff",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "type": "rectangle",
+              "id": "jU1E7",
+              "x": 966.3278688524588,
+              "y": 334,
+              "fill": "#e7e7e7ff",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "type": "text",
+              "id": "kX5WZ",
+              "x": 74,
+              "y": 753,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "The Studio",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "DaSSz",
+              "x": 520,
+              "y": 753,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "The Duplex",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "93H5K",
+              "x": 966,
+              "y": 753,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "The Triplex",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "lwDMd",
+              "x": 274,
+              "y": 763,
+              "fill": "#00000099",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "1 Bedroom",
+              "textAlign": "right",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "ujToZ",
+              "x": 719,
+              "y": 763,
+              "fill": "#00000099",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "2 Bedroom",
+              "textAlign": "right",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "Wzal7",
+              "x": 1166,
+              "y": 763,
+              "fill": "#00000099",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "3 Bedroom",
+              "textAlign": "right",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "Gr0Q5",
+              "x": 0,
+              "y": 1,
+              "name": "Frame 1",
+              "clip": true,
+              "width": 1440,
+              "height": 932,
+              "fill": "#00000066",
+              "effect": {
+                "type": "background_blur",
+                "radius": 4
+              },
+              "layout": "none"
+            },
+            {
+              "type": "rectangle",
+              "id": "8DgxK",
+              "x": 74,
+              "y": 224,
+              "fill": "#ffffffff",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "type": "rectangle",
+              "id": "Zggby",
+              "x": 520,
+              "y": 224,
+              "fill": "#ffffffff",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "type": "rectangle",
+              "id": "apaKW",
+              "x": 966,
+              "y": 224,
+              "fill": "#ffffffff",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "type": "text",
+              "id": "sgMQE",
+              "x": 966,
+              "y": 647,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "The Triplex",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "EiIyR",
+              "x": 520,
+              "y": 647,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "The Triplex",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "B1wyJ",
+              "x": 74,
+              "y": 647,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "The Triplex",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 50,
+              "id": "zQU4b",
+              "x": 273,
+              "y": 637,
+              "fill": "#e7e7e7",
+              "width": 200,
+              "height": 73
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 50,
+              "id": "RZF0R",
+              "x": 720,
+              "y": 637,
+              "fill": "#e7e7e7ff",
+              "width": 200,
+              "height": 73
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 50,
+              "id": "s0N39",
+              "x": 1166,
+              "y": 637,
+              "fill": "#e7e7e7ff",
+              "width": 200,
+              "height": 73
+            },
+            {
+              "type": "text",
+              "id": "Sz1sh",
+              "x": 290,
+              "y": 637,
+              "fill": "#000000",
+              "textGrowth": "fixed-width-height",
+              "width": 165,
+              "height": 73,
+              "content": "Book",
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 30,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "hxixg",
+              "x": 737,
+              "y": 637,
+              "fill": "#000000",
+              "textGrowth": "fixed-width-height",
+              "width": 165,
+              "height": 73,
+              "content": "Book",
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 30,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "akzKR",
+              "x": 1183,
+              "y": 637,
+              "fill": "#000000",
+              "textGrowth": "fixed-width-height",
+              "width": 165,
+              "height": 73,
+              "content": "Book",
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 30,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "context",
+          "id": "tlskC",
+          "x": 4926,
+          "y": 2858,
+          "width": 339,
+          "height": 219,
+          "content": "When user open/click one of the Signature Suites button, it will popup the list of the Suites available."
+        },
+        {
+          "type": "frame",
+          "id": "lnrhl",
+          "x": 2305,
+          "y": 2858,
+          "name": "Collection Suite Hover",
+          "clip": true,
+          "width": 1440,
+          "height": 933,
+          "fill": "#ffffffff",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "Vphvx",
+              "x": 74,
+              "y": 128,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 349,
+              "content": "Signature Suites",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 55,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "NgNEI",
+              "x": 74,
+              "y": 213,
+              "fill": "#00000099",
+              "textGrowth": "fixed-width",
+              "width": 598,
+              "content": "Cureated living spaces designed for the modern traveler. Select your perfect stay.",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "LybdG",
+              "x": 54,
+              "y": 314,
+              "fill": "#edededff",
+              "width": 440,
+              "height": 440,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "hPB3p",
+              "x": 519.2401995723449,
+              "y": 334,
+              "fill": "#eeeeeeff",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "type": "rectangle",
+              "id": "MefbW",
+              "x": 966.3278688524588,
+              "y": 334,
+              "fill": "#e7e7e7ff",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "type": "text",
+              "id": "pxRFP",
+              "x": 74,
+              "y": 753,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "The Studio",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "YNixp",
+              "x": 520,
+              "y": 753,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "The Duplex",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Me17N",
+              "x": 966,
+              "y": 753,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "The Triplex",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "m2c1H",
+              "x": 274,
+              "y": 763,
+              "fill": "#00000099",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "1 Bedroom",
+              "textAlign": "right",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "co0Hn",
+              "x": 719,
+              "y": 763,
+              "fill": "#00000099",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "2 Bedroom",
+              "textAlign": "right",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "f0hz6",
+              "x": 1166,
+              "y": 763,
+              "fill": "#00000099",
+              "textGrowth": "fixed-width",
+              "width": 200,
+              "content": "3 Bedroom",
+              "textAlign": "right",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            }
+          ]
+        },
+        {
+          "type": "context",
+          "id": "Rl3Fd",
+          "x": 3321,
+          "y": 2893,
+          "width": 338,
+          "height": 219,
+          "content": "When user hover to one of the 3 buttons, the picture size will become bigger."
+        },
+        {
+          "type": "frame",
+          "id": "a9twB",
+          "x": 2506,
+          "y": 888,
+          "name": "About",
+          "clip": true,
+          "width": 1439,
+          "height": 1352,
+          "fill": "#ffffff",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000040",
+            "offset": {
+              "x": 0,
+              "y": 4
+            },
+            "blur": 4
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "OGfD8",
+              "x": 460,
+              "y": 258,
+              "fill": "#000000",
+              "content": "Welcome to ALG HOTEL",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 55,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 10,
+              "id": "jG5Uz",
+              "x": 1090,
+              "y": 153,
+              "name": "2020_04_Project_Layout18.jpg",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./public/2020_04_Project_Layout18.jpg",
+                "mode": "fill"
+              },
+              "width": 284,
+              "height": 452
+            },
+            {
+              "type": "text",
+              "id": "zUjJS",
+              "x": 421,
+              "y": 363,
+              "fill": "#000000",
+              "textGrowth": "fixed-width",
+              "width": 598,
+              "content": "Dear Valued Guest,\n\nWelcome to the Affordable Luxury Group (ALG), your urban sanctuary in the heart of Kuala Lumpur, where seamless comfort and the warmth of our hospitality create a stay like no other.\n\nOur passion for service and atention to detail are the heart of everything we do from our thoughtfully designed suites at Arte Plus to our exclusive limosine services. Please feel free to reach out to any member of our team if there is anything we can do to make your experience even more exceptional.\n\nThank you for choosing ALG-Suite. We cannot wait to share our perfect blend of comfort and sophisatication with you.",
+              "textAlign": "center",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 10,
+              "id": "ErC7Y",
+              "x": 1090,
+              "y": 710,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./public/1.4-Arte_Tower-1-Lobby.jpg",
+                "mode": "fill"
+              },
+              "width": 284,
+              "height": 452
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 10,
+              "id": "i4nxM",
+              "x": 92,
+              "y": 811,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./public/623247993.jpg",
+                "mode": "fill"
+              },
+              "width": 284,
+              "height": 452
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 10,
+              "id": "6a8iP",
+              "x": 92,
+              "y": 258,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                "mode": "fill"
+              },
+              "width": 284,
+              "height": 452
+            },
+            {
+              "type": "rectangle",
+              "id": "38hut",
+              "x": 626,
+              "y": 79,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./public/LogoOnly.png",
+                "mode": "fill"
+              },
+              "width": 188,
+              "height": 179
+            },
+            {
+              "type": "frame",
+              "id": "b9QNM",
+              "x": 0,
+              "y": 0,
+              "name": "Header",
+              "clip": true,
+              "width": 1442,
+              "height": 108,
+              "fill": "#ffffffff",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "h32jP",
+                  "x": 1110,
+                  "y": 37,
+                  "fill": "#4b4b4b",
+                  "content": "AMPANG, KL",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "LZpdJ",
+                  "x": 1256,
+                  "y": 37,
+                  "fill": "#4b4b4b",
+                  "content": "+60138601915",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "KFgvl",
+                  "x": 1221,
+                  "y": 30,
+                  "fill": "#cccccc80",
+                  "width": 1,
+                  "height": 36
+                },
+                {
+                  "type": "text",
+                  "id": "ztBpi",
+                  "x": 424,
+                  "y": 34,
+                  "fill": "#4b4b4bff",
+                  "textGrowth": "fixed-width",
+                  "width": 102,
+                  "content": "Amenities",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "ziUwr",
+                  "x": 304,
+                  "y": 34,
+                  "fill": "#4b4b4bff",
+                  "textGrowth": "fixed-width",
+                  "width": 102,
+                  "content": "Location",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "mamiJ",
+                  "x": 203,
+                  "y": 34,
+                  "fill": "#4b4b4bff",
+                  "textGrowth": "fixed-width",
+                  "width": 83,
+                  "content": "Suites",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "4IGRK",
+                  "x": 85,
+                  "y": 34,
+                  "fill": "#4b4b4bff",
+                  "textGrowth": "fixed-width",
+                  "width": 101,
+                  "content": "About Us",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "Bi9ts",
+                  "x": 623,
+                  "y": 21,
+                  "fill": "#4b4b4bff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "ALG SUITE\nResort & Tour",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "context",
+          "id": "fYkaU",
+          "x": 4010.7045275257105,
+          "y": 905.6781844956342,
+          "width": 466,
+          "height": 219,
+          "content": "As you can see, the header is show which is when user is scroll up. When the user continue scroll down, the header will slide up and hide. Only appear when user scroll up."
+        },
+        {
+          "type": "frame",
+          "id": "bi8Au",
+          "x": 773,
+          "y": 111,
+          "name": "Arte Plus Desktop Size",
+          "clip": true,
+          "width": 1440,
+          "height": 6622,
+          "fill": "#ffffffff",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Cv5T8",
+              "x": 0,
+              "y": 6254,
+              "name": "Footer",
+              "clip": true,
+              "width": 1440,
+              "height": 368,
+              "fill": "#000000b5",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "top": 1,
+                  "bottom": 1
+                },
+                "fill": "#00000033"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xIKNh",
+                  "x": 84,
+                  "y": 45,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "ALG SUITE\nResort & Tour",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "800",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "W06RC",
+                  "x": 84,
+                  "y": 139,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 384,
+                  "height": 156,
+                  "content": "Providing exceptional stays in the heart of Kuala Lumpur's most iconic architectural landmark.",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "za3dm",
+                  "x": 592,
+                  "y": 45,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "Quick Links",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "800",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "t1Tvh",
+                  "x": 592,
+                  "y": 111,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 166,
+                  "height": 45,
+                  "content": "Our Suites",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "SBlMU",
+                  "x": 592,
+                  "y": 161,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 166,
+                  "height": 45,
+                  "content": "Amenities",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "y5eff",
+                  "x": 592,
+                  "y": 207,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 166,
+                  "height": 45,
+                  "content": "Location",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "99pYw",
+                  "x": 1088,
+                  "y": 45,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "Contact",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "800",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "9AySb",
+                  "x": 1088,
+                  "y": 111,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 292,
+                  "height": 45,
+                  "content": "Jalan Ampang, 55000 Kuala Lumpur, Malaysia",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "9w3Vr",
+                  "x": 1088,
+                  "y": 183,
+                  "fill": "#ffffffff",
+                  "textGrowth": "fixed-width-height",
+                  "width": 207,
+                  "height": 45,
+                  "content": "+60138601915",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SvRki",
+              "x": 0,
+              "y": 5435,
+              "name": "Nearby Attraction",
+              "clip": true,
+              "width": 1440,
+              "height": 819,
+              "fill": "#FFFFFF",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iji1W",
+                  "x": 421,
+                  "y": 70,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "Nearby Attractions",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "wPZYd",
+                  "x": 72,
+                  "y": 218,
+                  "fill": "#ffffffff",
+                  "width": 621,
+                  "height": 440,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "G865w",
+                  "x": 116,
+                  "y": 513,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Ampang Point Shopping Center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "UTQm1",
+                  "x": 116,
+                  "y": 423,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Village Grocer @ M City Ampang",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "aV3u6",
+                  "x": 116,
+                  "y": 342,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Great Eastern Mall",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "ZegFN",
+                  "x": 747,
+                  "y": 218,
+                  "fill": "#ffffffff",
+                  "width": 621,
+                  "height": 440,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "pGjfZ",
+                  "x": 116,
+                  "y": 239,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 501,
+                  "content": "WITHIN 1 KM",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "coxrH",
+                  "x": 801,
+                  "y": 239,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 501,
+                  "content": "WITHIN 1 - 4 KM",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "yPMt3",
+                  "x": 396,
+                  "y": 342,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Taman Tasik Ampang Hilir",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "g2NKi",
+                  "x": 396,
+                  "y": 423,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Gleneagles Hospital ",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "pYrKi",
+                  "x": 396,
+                  "y": 513,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Suzi's Corner",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "OzcIF",
+                  "x": 801,
+                  "y": 342,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Royal Selangor Polo Club",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "iNtkx",
+                  "x": 801,
+                  "y": 423,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Darul Ehsan Golf Club",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Nu9mX",
+                  "x": 801,
+                  "y": 513,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- The LINC KL",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "LdABW",
+                  "x": 1081,
+                  "y": 513,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- Jelatek / Ampang LRT Station",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ARRQp",
+                  "x": 1081,
+                  "y": 423,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "- Taman Tasik Datuk Keramat",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "d8Mqg",
+                  "x": 1081,
+                  "y": 342,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 254,
+                  "content": "- KLCC Park",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uv9I1",
+              "x": 0,
+              "y": 4647,
+              "name": "Maps",
+              "clip": true,
+              "width": 1440,
+              "height": 788,
+              "fill": "#f2f2f280",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "W0m3R",
+                  "x": 66,
+                  "y": 115,
+                  "fill": "#CCCCCC",
+                  "width": 566,
+                  "height": 557,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "uKG0j",
+                  "x": 720,
+                  "y": 115,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "THE NEIGHBORHOOD",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Ipia9",
+                  "x": 720,
+                  "y": 200,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width-height",
+                  "width": 684,
+                  "height": 90,
+                  "content": "Positioned at the epicenter of culture and commerce, you gateway to the city's finest landmarks.",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "KoFl0",
+                  "x": 720,
+                  "y": 394,
+                  "fill": "#ffffffff",
+                  "width": 621,
+                  "height": 278,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "fEOqi",
+                  "x": 249,
+                  "y": 364,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Maps",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bgHPL",
+                  "x": 774,
+                  "y": 513,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 288,
+                  "content": "- KL Central",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "INDpU",
+                  "x": 774,
+                  "y": 449,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 288,
+                  "content": "- KLIA/Subang Airport",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "qyAot",
+                  "x": 774,
+                  "y": 578,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 299,
+                  "content": "- Terminal Bersepadu Selatan",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "GgvvS",
+                  "x": 1073,
+                  "y": 449,
+                  "fill": "#40404099",
+                  "textGrowth": "fixed-width",
+                  "width": 234,
+                  "content": "45 MINS",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ieABP",
+                  "x": 1073,
+                  "y": 513,
+                  "fill": "#40404099",
+                  "textGrowth": "fixed-width",
+                  "width": 234,
+                  "content": "30 MINS",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Ez3Qe",
+                  "x": 1073,
+                  "y": 578,
+                  "fill": "#40404099",
+                  "textGrowth": "fixed-width",
+                  "width": 234,
+                  "content": "20 MINS",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "qsOdd",
+                  "x": 720,
+                  "y": 290,
+                  "fill": "#ffffffff",
+                  "width": 299,
+                  "height": 85,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "RZ5FN",
+                  "x": 1041,
+                  "y": 290,
+                  "fill": "#ffffffff",
+                  "width": 300,
+                  "height": 85,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 4
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "Xx4ij",
+                  "x": 770,
+                  "y": 309,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Waze",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 35,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "pU1fm",
+                  "x": 1090,
+                  "y": 309,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Maps",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 35,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hahBo",
+              "x": 0,
+              "y": 4214,
+              "name": "Transport Service",
+              "clip": true,
+              "width": 1440,
+              "height": 433,
+              "fill": "#ffffffff",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XsGYX",
+                  "x": 70,
+                  "y": 62,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "Seamless Airport Transfer",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "3NQXO",
+                  "x": 70,
+                  "y": 147,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width-height",
+                  "width": 794,
+                  "height": 225,
+                  "content": "Complementing our premium accommodations, we provide exclusive Limousine services with both Luxury MPV and Mercedes vehicles, ensuring a seamless and luxurious experience throughout your stay.\n\n*Note: Only if the driver is available.\n",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vgEA2",
+              "x": 1,
+              "y": 3667,
+              "name": "Amenities",
+              "clip": true,
+              "width": 1434,
+              "height": 547,
+              "fill": "#FFFFFF",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tIqEv",
+                  "x": 418,
+                  "y": 62,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "Amenities",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "8oXTy",
+                  "x": 151,
+                  "y": 226,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Pool",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "NKXl5",
+                  "x": 614,
+                  "y": 226,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Gym",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "C4FUG",
+                  "x": 621,
+                  "y": 408,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Wifi",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "un2L9",
+                  "x": 151,
+                  "y": 408,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 258,
+                  "content": "Free Parking",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "HxNvC",
+                  "x": 955,
+                  "y": 226,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 311,
+                  "content": "In-Suite Laundry",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cb8SE",
+                  "x": 955,
+                  "y": 408,
+                  "fill": "#404040ff",
+                  "textGrowth": "fixed-width",
+                  "width": 327,
+                  "content": "24/7 Mini Market",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 45,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lJhIG",
+              "x": 0,
+              "y": 2734,
+              "name": "Collection Suite",
+              "clip": true,
+              "width": 1440,
+              "height": 933,
+              "fill": "#ffffffff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "X92qq",
+                  "x": 74,
+                  "y": 128,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 349,
+                  "content": "Signature Suites",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ArVxC",
+                  "x": 74,
+                  "y": 213,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "Cureated living spaces designed for the modern traveler. Select your perfect stay.",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ybaDX",
+                  "x": 74,
+                  "y": 334,
+                  "fill": "#edededff",
+                  "width": 400,
+                  "height": 400
+                },
+                {
+                  "type": "rectangle",
+                  "id": "NxjG0",
+                  "x": 519.2401995723449,
+                  "y": 334,
+                  "fill": "#eeeeeeff",
+                  "width": 400,
+                  "height": 400
+                },
+                {
+                  "type": "rectangle",
+                  "id": "JwIt6",
+                  "x": 966.3278688524588,
+                  "y": 334,
+                  "fill": "#e7e7e7ff",
+                  "width": 400,
+                  "height": 400
+                },
+                {
+                  "type": "text",
+                  "id": "ZEVn2",
+                  "x": 74,
+                  "y": 753,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "The Studio",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ktXOp",
+                  "x": 520,
+                  "y": 753,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "The Duplex",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "kHACA",
+                  "x": 966,
+                  "y": 753,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "The Triplex",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ZzDSV",
+                  "x": 274,
+                  "y": 763,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "1 Bedroom",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "mYe4t",
+                  "x": 719,
+                  "y": 763,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "2 Bedroom",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "EqsfR",
+                  "x": 1166,
+                  "y": 763,
+                  "fill": "#00000099",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "3 Bedroom",
+                  "textAlign": "right",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "3xlTu",
+              "x": -1,
+              "y": 2137,
+              "fill": [
+                {
+                  "type": "image",
+                  "opacity": 0.8,
+                  "enabled": true,
+                  "url": "./public/471119343.jpg",
+                  "mode": "fill"
+                },
+                "#00000033"
+              ],
+              "width": 1441,
+              "height": 597,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              }
+            },
+            {
+              "type": "frame",
+              "id": "quBWT",
+              "x": -1,
+              "y": 785,
+              "name": "About",
+              "clip": true,
+              "width": 1439,
+              "height": 1352,
+              "fill": "#ffffff",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bmm3D",
+                  "x": 460,
+                  "y": 258,
+                  "fill": "#000000",
+                  "content": "Welcome to ALG HOTEL",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 55,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 10,
+                  "id": "0KTdq",
+                  "x": 1090,
+                  "y": 153,
+                  "name": "2020_04_Project_Layout18.jpg",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/2020_04_Project_Layout18.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 284,
+                  "height": 452
+                },
+                {
+                  "type": "text",
+                  "id": "wHIb0",
+                  "x": 421,
+                  "y": 363,
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 598,
+                  "content": "Dear Valued Guest,\n\nWelcome to the Affordable Luxury Group (ALG), your urban sanctuary in the heart of Kuala Lumpur, where seamless comfort and the warmth of our hospitality create a stay like no other.\n\nOur passion for service and atention to detail are the heart of everything we do from our thoughtfully designed suites at Arte Plus to our exclusive limosine services. Please feel free to reach out to any member of our team if there is anything we can do to make your experience even more exceptional.\n\nThank you for choosing ALG-Suite. We cannot wait to share our perfect blend of comfort and sophisatication with you.",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 10,
+                  "id": "Qdo35",
+                  "x": 1090,
+                  "y": 710,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/1.4-Arte_Tower-1-Lobby.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 284,
+                  "height": 452
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 10,
+                  "id": "I9TH6",
+                  "x": 92,
+                  "y": 811,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/623247993.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 284,
+                  "height": 452
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 10,
+                  "id": "2WEf2",
+                  "x": 92,
+                  "y": 258,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                    "mode": "fill"
+                  },
+                  "width": 284,
+                  "height": 452
+                },
+                {
+                  "type": "rectangle",
+                  "id": "Od6ik",
+                  "x": 626,
+                  "y": 79,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/LogoOnly.png",
+                    "mode": "fill"
+                  },
+                  "width": 188,
+                  "height": 179
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AnxuW",
+              "x": -1,
+              "y": 0,
+              "name": "Intro",
+              "clip": true,
+              "width": 1440,
+              "height": 785,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "gQxA4",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Video",
+                  "fill": [
+                    {
+                      "type": "image",
+                      "opacity": 0.8,
+                      "enabled": true,
+                      "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                      "mode": "fill"
+                    },
+                    "#00000073"
+                  ],
+                  "width": 1440,
+                  "height": 785
+                },
+                {
+                  "type": "text",
+                  "id": "PsNaO",
+                  "x": 866,
+                  "y": 375,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "AMPANG",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 120,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "zWwCJ",
+                  "x": 170,
+                  "y": 198,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 877,
+                  "height": 177,
+                  "content": "ARTE PLUS",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 150,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 30,
+                  "id": "xwBUQ",
+                  "x": 609,
+                  "y": 596,
+                  "fill": "#cd7394b3",
+                  "width": 221,
+                  "height": 61
+                },
+                {
+                  "type": "text",
+                  "id": "KjEkR",
+                  "x": 653,
+                  "y": 607,
+                  "fill": "#ffffff",
+                  "content": "View Suites",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xXs4r",
+              "x": -4,
+              "y": 0,
+              "name": "Header",
+              "clip": true,
+              "width": 1442,
+              "height": 108,
+              "fill": "#ffffff00",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ofkaI",
+                  "x": 1110,
+                  "y": 37,
+                  "fill": "#ffffff",
+                  "content": "AMPANG, KL",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "iPKPp",
+                  "x": 1256,
+                  "y": 37,
+                  "fill": "#ffffff",
+                  "content": "+60138601915",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "7t4rW",
+                  "x": 1221,
+                  "y": 30,
+                  "fill": "#cccccc80",
+                  "width": 1,
+                  "height": 36
+                },
+                {
+                  "type": "text",
+                  "id": "l6r7y",
+                  "x": 424,
+                  "y": 34,
+                  "fill": "#ffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 102,
+                  "content": "Amenities",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "HB5rV",
+                  "x": 304,
+                  "y": 34,
+                  "fill": "#ffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 102,
+                  "content": "Location",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "oGfuZ",
+                  "x": 203,
+                  "y": 34,
+                  "fill": "#ffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 83,
+                  "content": "Suites",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "KRTaG",
+                  "x": 85,
+                  "y": 34,
+                  "fill": "#ffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 101,
+                  "content": "About Us",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "h3I8Z",
+                  "x": 623,
+                  "y": 21,
+                  "fill": "#ffffff",
+                  "textGrowth": "fixed-width",
+                  "width": 207,
+                  "content": "ALG SUITE\nResort & Tour",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 25,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "HbOHC",
+      "x": -9623,
+      "y": -361,
+      "name": "Introduction Page",
+      "clip": true,
+      "width": 4737,
+      "height": 2703,
+      "fill": "#2c2c2c",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "vVmXx",
+          "x": 3371,
+          "y": 500,
+          "name": "Introduction Phone Size",
+          "clip": true,
+          "width": 375,
+          "height": 599,
+          "fill": "#FFFFFF",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "2fmvr",
+              "x": 0,
+              "y": 200.0000000000001,
+              "name": "Button Arte",
+              "rotation": -360,
+              "clip": true,
+              "width": 375,
+              "height": 200,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "oUWFB",
+                  "x": 0,
+                  "y": 1.1368683772161603e-13,
+                  "rotation": -360.00000000000006,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                    "mode": "fill"
+                  },
+                  "width": 375,
+                  "height": 200
+                },
+                {
+                  "type": "text",
+                  "id": "UHHeu",
+                  "x": 0,
+                  "y": 52.00000000000006,
+                  "rotation": 2.5444437451708134e-14,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 375,
+                  "height": 65,
+                  "content": "ARTE PLUS",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 50,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "text",
+                  "id": "pBCfU",
+                  "x": 87,
+                  "y": 107.99999999999994,
+                  "rotation": 2.5444437451708134e-14,
+                  "fill": "#ffffff99",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width",
+                  "width": 202,
+                  "content": "AMPANG",
+                  "textAlign": "center",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wSUJ8",
+              "x": 0,
+              "y": 399,
+              "name": "Button Semporna",
+              "rotation": -360,
+              "clip": true,
+              "width": 375,
+              "height": 200,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "PzYzx",
+                  "x": 0,
+                  "y": 1.1368683772161603e-13,
+                  "rotation": -360.00000000000006,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/Semporna.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 375,
+                  "height": 200
+                },
+                {
+                  "type": "text",
+                  "id": "2VXtR",
+                  "x": 0,
+                  "y": 52.00000000000023,
+                  "rotation": 2.5444437451708134e-14,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 375,
+                  "height": 65,
+                  "content": "PULAU",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 50,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "text",
+                  "id": "CjswF",
+                  "x": 87,
+                  "y": 108.00000000000023,
+                  "rotation": 2.5444437451708134e-14,
+                  "fill": "#ffffff99",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width",
+                  "width": 202,
+                  "content": "SEMPORNA",
+                  "textAlign": "center",
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 30,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "86OFJ",
+              "x": 0,
+              "y": 8.526512829121202e-14,
+              "name": "Button Astrum",
+              "rotation": -360,
+              "clip": true,
+              "width": 375,
+              "height": 200,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "APdY5",
+                  "x": -0.019345739665368455,
+                  "y": 0.33679778744436817,
+                  "rotation": -720,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/ASTRUM-AMPANG.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 375,
+                  "height": 200
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m98NT",
+          "x": 2106,
+          "y": 496,
+          "name": "Introduction Tablet Size",
+          "clip": true,
+          "width": 1023,
+          "height": 600,
+          "fill": "#FFFFFF",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "6D9fN",
+              "x": 798.9792647929062,
+              "y": -106.36954125968964,
+              "name": "Button Semporna",
+              "rotation": -9.999999999999975,
+              "clip": true,
+              "width": 409,
+              "height": 778,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "esxJ3",
+                  "x": -567.09277693781,
+                  "y": 199.5055651038263,
+                  "rotation": -350,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/Semporna.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 1054,
+                  "height": 887
+                },
+                {
+                  "type": "text",
+                  "id": "2Fbfp",
+                  "x": -93.86512306774603,
+                  "y": 342.87813818896734,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 500,
+                  "height": 126,
+                  "content": "PULAU",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 60,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "text",
+                  "id": "b5G95",
+                  "x": 66.76549058312594,
+                  "y": 378.52650362336294,
+                  "rotation": -350,
+                  "fill": "#ffffff99",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "SEMPORNA",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PLQxF",
+              "x": -44.83968734940663,
+              "y": -130,
+              "name": "Button Astrum",
+              "rotation": -9.999999999999975,
+              "clip": true,
+              "width": 409,
+              "height": 778,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "URCio",
+                  "x": -156.19721444106267,
+                  "y": 134.16157746546872,
+                  "rotation": -350,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/ASTRUM-AMPANG.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 750,
+                  "height": 877
+                },
+                {
+                  "type": "text",
+                  "id": "5D8vZ",
+                  "x": 193.79154847342306,
+                  "y": 380.12337902024706,
+                  "rotation": -350,
+                  "fill": "#ffffff99",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "AMPANG",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "8QmYE",
+                  "x": 8.540740997245848,
+                  "y": 348.81621802752466,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 500,
+                  "height": 126,
+                  "content": "ASTRUM",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 60,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NrpWS",
+              "x": 377.06978872175023,
+              "y": -113.99226988559619,
+              "name": "Button Arte",
+              "rotation": -9.999999999999975,
+              "clip": true,
+              "width": 409,
+              "height": 778,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "fKuWR",
+                  "x": -400.1631722360744,
+                  "y": 164.32736513130098,
+                  "rotation": -350,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                    "mode": "fill"
+                  },
+                  "width": 1269,
+                  "height": 900
+                },
+                {
+                  "type": "text",
+                  "id": "mJfjX",
+                  "x": -38.46617238429553,
+                  "y": 340.8501299824661,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 500,
+                  "height": 126,
+                  "content": "ARTE PLUS",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 60,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "text",
+                  "id": "evOQk",
+                  "x": 146.78463509188168,
+                  "y": 372.1572909751885,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "AMPANG",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 40,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "SeYgK",
+          "x": 386,
+          "y": 1638,
+          "name": "Introduction Hover",
+          "clip": true,
+          "width": 1440,
+          "height": 785,
+          "fill": "#000000ff",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "gUnmJ",
+              "x": 551.1211412202686,
+              "y": -155,
+              "name": "Button Arte",
+              "rotation": -9.999999999999975,
+              "clip": true,
+              "width": 522,
+              "height": 1020,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "1ELUm",
+                  "x": -400.1631722360744,
+                  "y": 164.32736513130098,
+                  "rotation": -350,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                    "mode": "fill"
+                  },
+                  "width": 1269,
+                  "height": 900
+                },
+                {
+                  "type": "text",
+                  "id": "88vyr",
+                  "x": -3.136234278134907,
+                  "y": 449.3715651745574,
+                  "rotation": -350,
+                  "fill": "#ffffff",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 500,
+                  "height": 126,
+                  "content": "ARTE PLUS",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 100,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "text",
+                  "id": "x8XxY",
+                  "x": 117.63339755483958,
+                  "y": 529.6192818207505,
+                  "rotation": -350,
+                  "fill": "#ffffff",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "AMPANG",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 80,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qznnr",
+              "x": 14.121141220268555,
+              "y": -176,
+              "name": "Button Astrum",
+              "rotation": -370,
+              "clip": true,
+              "width": 522,
+              "height": 1020,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "uPvNN",
+                  "x": -156.19721444106267,
+                  "y": 134.16157746546872,
+                  "rotation": -350,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/ASTRUM-AMPANG.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 750,
+                  "height": 877
+                },
+                {
+                  "type": "text",
+                  "id": "rg0bf",
+                  "x": 180.59437635844336,
+                  "y": 532.7328490829386,
+                  "rotation": -350,
+                  "fill": "#ffffff99",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "AMPANG",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 60,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "efdON",
+                  "x": 23.916645700797687,
+                  "y": 491.5355676774424,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 500,
+                  "height": 126,
+                  "content": "ASTRUM",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 80,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ks3Db",
+              "x": 1088.1211412202686,
+              "y": -145,
+              "name": "Button Semporna",
+              "rotation": -9.999999999999975,
+              "clip": true,
+              "width": 521,
+              "height": 1020,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "2bmWV",
+                  "x": -567.09277693781,
+                  "y": 199.5055651038263,
+                  "rotation": -350,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/Semporna.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 1054,
+                  "height": 887
+                },
+                {
+                  "type": "text",
+                  "id": "eJNAf",
+                  "x": -32.34575172009721,
+                  "y": 472.2461945242204,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 500,
+                  "height": 126,
+                  "content": "PULAU",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 80,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "text",
+                  "id": "8KG1y",
+                  "x": 94.27389825079166,
+                  "y": 524.2096629450662,
+                  "rotation": -350,
+                  "fill": "#ffffff99",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "SEMPORNA",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 60,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "NXIVX",
+              "x": 616,
+              "y": 20,
+              "fill": "#ffffff",
+              "textGrowth": "fixed-width",
+              "width": 207,
+              "content": "ALG SUITE\nResort & Tour",
+              "textAlign": "center",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "context",
+          "id": "R6zHc",
+          "x": 545,
+          "y": 1404,
+          "width": 1096,
+          "height": 219,
+          "content": "This section show when user hover one of the buttons which is the Arte Plus Ampang. The Image will be 100% appearence rather than 50% and also the wording become larger and brighter. Same goes to other two button."
+        },
+        {
+          "type": "frame",
+          "id": "YPtIm",
+          "x": 386,
+          "y": 403,
+          "name": "Introduction",
+          "clip": true,
+          "width": 1440,
+          "height": 785,
+          "fill": "#000000ff",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "lrVqY",
+              "x": 551.1211412202686,
+              "y": -155,
+              "name": "Button Arte",
+              "rotation": -9.999999999999975,
+              "clip": true,
+              "width": 522,
+              "height": 1020,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "DDFNn",
+                  "x": -400.1631722360744,
+                  "y": 164.32736513130098,
+                  "rotation": -350,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg",
+                    "mode": "fill"
+                  },
+                  "width": 1269,
+                  "height": 900
+                },
+                {
+                  "type": "text",
+                  "id": "MG1k7",
+                  "x": -35.30017497913383,
+                  "y": 472.76713905722113,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 500,
+                  "height": 126,
+                  "content": "ARTE PLUS",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 80,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "text",
+                  "id": "Xk4md",
+                  "x": 121.37755567851187,
+                  "y": 513.9644204627173,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "AMPANG",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 60,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "b9fkd",
+              "x": 14.121141220268555,
+              "y": -176,
+              "name": "Button Astrum",
+              "rotation": -370,
+              "clip": true,
+              "width": 522,
+              "height": 1020,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "VXUbn",
+                  "x": -156.19721444106267,
+                  "y": 134.16157746546872,
+                  "rotation": -350,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/ASTRUM-AMPANG.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 750,
+                  "height": 877
+                },
+                {
+                  "type": "text",
+                  "id": "xCYHg",
+                  "x": 180.59437635844336,
+                  "y": 532.7328490829386,
+                  "rotation": -350,
+                  "fill": "#ffffff99",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "AMPANG",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 60,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "USwTL",
+                  "x": 23.916645700797687,
+                  "y": 491.5355676774424,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 500,
+                  "height": 126,
+                  "content": "ASTRUM",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 80,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "27Etw",
+              "x": 1088.1211412202686,
+              "y": -145,
+              "name": "Button Semporna",
+              "rotation": -9.999999999999975,
+              "clip": true,
+              "width": 521,
+              "height": 1020,
+              "fill": "#000000ff",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "agrbh",
+                  "x": -567.09277693781,
+                  "y": 199.5055651038263,
+                  "rotation": -350,
+                  "fill": {
+                    "type": "image",
+                    "opacity": 0.5,
+                    "enabled": true,
+                    "url": "./public/Semporna.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 1054,
+                  "height": 887
+                },
+                {
+                  "type": "text",
+                  "id": "XxVGd",
+                  "x": -32.34575172009721,
+                  "y": 472.2461945242204,
+                  "rotation": -350,
+                  "fill": "#ffffffb3",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "textGrowth": "fixed-width-height",
+                  "width": 500,
+                  "height": 126,
+                  "content": "PULAU",
+                  "textAlign": "center",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 80,
+                  "fontWeight": "600",
+                  "letterSpacing": 5
+                },
+                {
+                  "type": "text",
+                  "id": "Lh4l2",
+                  "x": 94.27389825079166,
+                  "y": 524.2096629450662,
+                  "rotation": -350,
+                  "fill": "#ffffff99",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000040",
+                    "offset": {
+                      "x": 4,
+                      "y": 8
+                    },
+                    "blur": 4
+                  },
+                  "content": "SEMPORNA",
+                  "fontFamily": "Afacad Flux",
+                  "fontSize": 60,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "JOF8R",
+              "x": 616,
+              "y": 20,
+              "fill": "#ffffff",
+              "textGrowth": "fixed-width",
+              "width": 207,
+              "content": "ALG SUITE\nResort & Tour",
+              "textAlign": "center",
+              "fontFamily": "Afacad Flux",
+              "fontSize": 25,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "context",
+          "id": "L2mNB",
+          "x": 545,
+          "y": 169,
+          "name": "Context",
+          "width": 1096,
+          "height": 219,
+          "content": "The beginning of the page where there will be 3 image act as button that show 3 type of location which is the ASTRUM AMPANG, ARTE PLUS AMPANG, and PULAU, SEMPORNA. "
+        },
+        {
+          "type": "text",
+          "id": "a9Zud",
+          "x": 3458,
+          "y": 595.0000000000001,
+          "rotation": 2.5444437451708134e-14,
+          "fill": "#ffffff99",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000040",
+            "offset": {
+              "x": 4,
+              "y": 8
+            },
+            "blur": 4
+          },
+          "textGrowth": "fixed-width",
+          "width": 202,
+          "content": "AMPANG",
+          "textAlign": "center",
+          "textAlignVertical": "middle",
+          "fontFamily": "Afacad Flux",
+          "fontSize": 30,
+          "fontWeight": "500"
+        },
+        {
+          "type": "text",
+          "id": "7p79L",
+          "x": 3371,
+          "y": 539.0000000000002,
+          "rotation": 2.5444437451708134e-14,
+          "fill": "#ffffffb3",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000040",
+            "offset": {
+              "x": 4,
+              "y": 8
+            },
+            "blur": 4
+          },
+          "textGrowth": "fixed-width-height",
+          "width": 375,
+          "height": 65,
+          "content": "ASTRUM",
+          "textAlign": "center",
+          "fontFamily": "Afacad Flux",
+          "fontSize": 50,
+          "fontWeight": "600",
+          "letterSpacing": 5
+        }
+      ]
+    }
+  ]
+}
