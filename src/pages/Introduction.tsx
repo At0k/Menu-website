@@ -55,7 +55,7 @@ const IntroPanel = ({ image, title, subtitle, onClick, expanding, dimmed }: Intr
 const PANELS = [
   { id: 'astrum', image: '/ASTRUM-AMPANG.jpg', title: 'ASTRUM', subtitle: 'AMPANG', path: '/astrum-ampang' },
   { id: 'arte', image: '/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg', title: 'ARTE+', subtitle: 'AMPANG', path: '/arte-plus' },
-  { id: 'pulau', image: '/Semporna.jpg', title: 'SELAKAN', subtitle: 'SEMPORNA', path: '/pulau-semporna' },
+  { id: 'pulau', image: '/Semporna.jpg', title: 'BOHEY DULANG', subtitle: 'SEMPORNA', path: '/pulau-semporna' },
 ]
 
 const Introduction = () => {
