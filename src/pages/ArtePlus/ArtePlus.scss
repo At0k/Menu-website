@@ -1,20 +1,15 @@
-// ─── Variables ──────────────────────────────────
-$font:           'Afacad Flux', sans-serif;
-$font-serif:     'Cormorant Garamond', serif;
-$text:           #2a2a2a;
-$text-light:     #ffffff;
-$text-dim:       rgba(42, 42, 42, 0.6);
-$gold:           #d4af37;
-$gold-light:     #f4e8c1;
-$bg:             #ffffff;
-$bg-alt:         #f9f9f9;
-$footer-bg:      rgba(15, 15, 15, 0.95);
-$border:         rgba(0, 0, 0, 0.08);
-$radius:         12px;
-$radius-lg:      24px;
-$t:              0.4s cubic-bezier(0.25, 1, 0.5, 1);
-$md:             768px;
-$lg:             1024px;
+@use './variables' as *;
+@use './sections/Header.scss';
+@use './sections/Hero.scss';
+@use './sections/About.scss';
+@use './sections/Suites.scss';
+@use './sections/Amenities.scss';
+@use './sections/Transport.scss';
+@use './sections/Location.scss';
+@use './sections/NearbyAttractions.scss';
+@use './sections/Footer.scss';
+@use './sections/FloatingWA.scss';
+
 
 // ─── Animations & Utilities ──────────────────────
 @keyframes fadeInUp {
@@ -50,13 +45,4 @@ $lg:             1024px;
   }
 }
 
-@import './sections/Header.scss';
-@import './sections/Hero.scss';
-@import './sections/About.scss';
-@import './sections/Suites.scss';
-@import './sections/Amenities.scss';
-@import './sections/Transport.scss';
-@import './sections/Location.scss';
-@import './sections/NearbyAttractions.scss';
-@import './sections/Footer.scss';
-@import './sections/FloatingWA.scss';
+
