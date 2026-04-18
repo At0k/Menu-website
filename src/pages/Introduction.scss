@@ -81,6 +81,17 @@ $breakpoint-md:       768px;
   color: inherit;
   width: 100%;
 
+  @media (max-width: #{$breakpoint-md - 1px}) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+    &:active {
+      .intro__panel-bg      { opacity: 1; transform: scale(1.02); }
+      .intro__panel-overlay { opacity: 0.3; }
+      .intro__panel-title   { color: rgba(255, 255, 255, 1); }
+      .intro__panel-subtitle{ color: rgba(255, 255, 255, 0.9); }
+    }
+  }
+
   @media (min-width: $breakpoint-md) {
     min-height: 100vh;
 

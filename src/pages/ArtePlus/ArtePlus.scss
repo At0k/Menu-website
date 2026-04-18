@@ -223,7 +223,10 @@ $lg:             1024px;
   z-index: 0;        
   background: #000;
 
-  @media (max-width: $md) { min-height: 600px; }
+  @media (max-width: $md) { 
+    position: relative;
+    min-height: 100dvh; 
+  }
 }
 
 .ap-about, .ap-suites, .ap-amenities, .ap-transport, .ap-nearby, .ap-footer, .ap-location, .ap-feature-image {
@@ -241,6 +244,11 @@ $lg:             1024px;
 .ap-about {
   margin-top: 100vh; // Push down all sections to reveal fixed Hero underneath
   padding-top: 6rem;
+
+  @media (max-width: $md) {
+    margin-top: 0;
+    padding-top: 4rem;
+  }
 }
 
 .ap-feature-image {
@@ -251,6 +259,12 @@ $lg:             1024px;
   background-position: center;
   background-attachment: fixed; // Parallax effect
   box-shadow: inset 0 0 100px rgba(0,0,0,0.2);
+
+  @media (max-width: $md) {
+    background-attachment: scroll;
+    height: 40vh;
+    min-height: 250px;
+  }
 }
 
 .ap-hero__bg {
@@ -614,6 +628,13 @@ $lg:             1024px;
     cursor: pointer;
     &:hover { background: #d5d5d5; }
   }
+
+  @media (max-width: $md) {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+    bottom: 1.5rem;
+  }
 }
 
 
@@ -803,6 +824,10 @@ $lg:             1024px;
   background-position: center;
   background-attachment: fixed;
   transform: scale(1.05); // slight scale to cover parallax bleed
+
+  @media (max-width: $md) {
+    background-attachment: scroll;
+  }
 }
 
 .ap-transport__overlay {
