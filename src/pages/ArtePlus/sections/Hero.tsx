@@ -5,8 +5,8 @@ import '../ArtePlus.scss'
 //   Title top-left, subtitle bottom-right, "View Suites" pill centre-bottom
 // ─────────────────────────────────────────────
 const Hero = () => {
-    const handleBookNow = () => {
-        window.open('https://www.airbnb.com/users/profile/1469224031223495524?previous_page_name=PdpHomeMarketplace', '_blank')
+    const scrollToSuites = () => {
+        document.getElementById('suites')?.scrollIntoView({ behavior: 'smooth' })
     }
 
     return (
@@ -27,8 +27,8 @@ const Hero = () => {
                 </div>
 
                 <div className="ap-hero__cta-wrapper">
-                    <button className="ap-hero__cta" onClick={handleBookNow}>
-                        Book Now
+                    <button className="ap-hero__cta" onClick={scrollToSuites}>
+                        View Suites
                     </button>
                 </div>
             </div>
