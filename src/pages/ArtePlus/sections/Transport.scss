@@ -1,0 +1,65 @@
+.ap-transport {
+  position: relative;
+  padding: 10rem 4rem;
+  overflow: hidden;
+  color: $text-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ap-transport__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transform: scale(1.05); // slight scale to cover parallax bleed
+
+  @media (max-width: $md) {
+    background-attachment: scroll;
+  }
+}
+
+.ap-transport__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+.ap-transport__inner {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ap-transport__divider {
+  width: 60px;
+  height: 2px;
+  background: $gold;
+  margin-bottom: 2rem;
+}
+
+.ap-transport__title {
+  color: $text-light;
+  font-size: clamp(2rem, 5vw, 4rem); 
+  font-weight: 500;
+  margin: 0 0 2rem;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.ap-transport__body {
+  font-size: clamp(1rem, 3vw, 1.4rem); 
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+
+

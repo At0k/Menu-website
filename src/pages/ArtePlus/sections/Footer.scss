@@ -1,0 +1,106 @@
+.ap-footer__cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  background: rgba(205, 115, 148, 0.1); 
+  border-radius: $radius-lg;
+  
+  @media (max-width: $md) {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.ap-footer__cta-title {
+  font-family: $font-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: $text-light;
+  margin: 0 0 1rem;
+}
+
+.ap-footer__cta-desc {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 2rem;
+}
+
+.ap-btn-book--large {
+  font-size: 1.25rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  
+  @media (max-width: $md) {
+    font-size: 1.1rem;
+    padding: 0.8rem 2.5rem;
+  }
+}
+
+.ap-footer {
+  background: $footer-bg;
+  padding: 6rem 4rem;
+  color: $text-light;
+
+  @media (max-width: $md) { padding: 4rem 2rem; }
+}
+
+.ap-footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: $lg) { gap: 2rem; }
+  @media (max-width: $md) { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+}
+
+.ap-footer__logo {
+  font-size: 1.875rem; // 30px
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin: 0 0 2rem;
+  line-height: 1.2;
+}
+
+.ap-footer__logo-sub {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.ap-footer__brand-desc {
+  font-size: clamp(1rem, 2.5vw, 1.56rem);
+  color: $text-light;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ap-footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ap-footer__col-title {
+  font-size: clamp(1.4rem, 4vw, 1.875rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: $text-light;
+  margin: 0 0 1rem;
+}
+
+.ap-footer__link {
+  font-size: clamp(1rem, 2.5vw, 1.56rem);
+  color: $text-light;
+  text-decoration: none;
+  transition: opacity $t;
+  &:hover { opacity: 0.7; }
+}
+
+.ap-footer__address {
+  font-size: clamp(1rem, 2.5vw, 1.56rem);
+  color: $text-light;
+  line-height: 1.6;
+  margin: 0;
+}
+
