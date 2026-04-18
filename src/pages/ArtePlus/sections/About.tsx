@@ -52,7 +52,7 @@ const About = () => {
                     <p>Dear Valued Guest,</p>
                     <p>Welcome to the Affordable Luxury Group (ALG), your urban sanctuary in the heart of Kuala Lumpur, where seamless comfort and the warmth of our hospitality create a stay like no other.</p>
                     <p>Our passion for service and attention to detail are the heart of everything we do — from our thoughtfully designed suites at Arte Plus to our exclusive limousine services.</p>
-                    <p>Thank you for choosing ALG-Suite. We cannot wait to share our perfect blend of comfort and sophistication with you.</p>
+                    <p>Thank you for choosing ALG HOTEL. We cannot wait to share our perfect blend of comfort and sophistication with you.</p>
                 </div>
             </div>
 

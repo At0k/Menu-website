@@ -50,7 +50,7 @@ const Header = () => {
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 aria-label="Back to top"
             >
-                ALG SUITE
+                ALG HOTEL
                 <span className="ap-header__logo-sub">Resort & Tour</span>
             </button>
 

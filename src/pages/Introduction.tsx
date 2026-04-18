@@ -8,7 +8,7 @@ import './Introduction.scss'
 const IntroHeader = () => (
   <header className="intro__header">
     <h2 className="intro__logo">
-      ALG SUITE<br />
+      ALG HOTEL<br />
       <span className="intro__logo-sub">Resort &amp; Tour</span>
     </h2>
   </header>
@@ -63,9 +63,9 @@ const IntroPanel = ({ image, title, subtitle, onClick, expanding, dimmed }: Intr
 // Introduction  ← root page
 // ─────────────────────────────────────────────
 const PANELS = [
-  { id: 'astrum', image: '/ASTRUM-AMPANG.jpg', title: 'ASTRUM', subtitle: 'AMPANG', path: '/astrum-ampang' },
+  { id: 'astrum', image: '/ASTRUM-AMPANG.jpg', title: 'ASTRUM', subtitle: 'AMPANG', url: 'https://www.airbnb.com/rooms/1618879879705461558?source_impression_id=p3_1776490813_P3HCvmO9mTqPqWIw' },
   { id: 'arte', image: '/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg', title: 'ARTE+', subtitle: 'AMPANG', path: '/arte-plus' },
-  { id: 'pulau', image: '/Semporna.jpg', title: 'BOHEY DULANG', subtitle: 'SEMPORNA', path: '/pulau-semporna' },
+  { id: 'pulau', image: '/Semporna.jpg', title: 'BOHEY DULANG', subtitle: 'SEMPORNA', url: 'https://www.airbnb.com/rooms/1355859443271848941?source_impression_id=p3_1776489990_P3aVDGCClc3WoNRA' },
 ]
 
 const Introduction = () => {
@@ -75,11 +75,18 @@ const Introduction = () => {
 
   const handleClick = (panel: typeof PANELS[0]) => {
     if (active) return                   // already animating
+
+    // If it's an external link, just open it immediately
+    if ('url' in panel) {
+      window.open(panel.url, '_blank')
+      return
+    }
+
     setActive(panel.id)
 
     // Let the panel fill the screen (350ms), then cross-fade to new page
     timerRef.current = setTimeout(() => {
-      const path = panel.path
+      const path = panel.path as string
       if ('startViewTransition' in document) {
         // Browser handles the cross-fade natively — no flash or gap
         ; (document as Document & { startViewTransition: (cb: () => void) => void })

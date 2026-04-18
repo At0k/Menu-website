@@ -2,7 +2,7 @@ import '../ArtePlus.scss'
 
 // ─────────────────────────────────────────────
 // Footer  ← pink-tinted, 3-column layout
-//   Left:   ALG SUITE logo + tagline + brand description
+//   Left:   ALG HOTEL logo + tagline + brand description
 //   Center: Quick Links (Our Suites, Amenities, Location)
 //   Right:  address + phone
 // ─────────────────────────────────────────────
@@ -29,7 +29,7 @@ const Footer = () => {
 
                 {/* Brand */}
                 <div className="ap-footer__brand">
-                    <p className="ap-footer__logo">ALG SUITE</p>
+                    <p className="ap-footer__logo">ALG HOTEL</p>
                     <p className="ap-footer__logo-sub">Resort &amp; Tour</p>
                     <p className="ap-footer__brand-desc">
                         Providing exceptional stays in the heart of Kuala Lumpur's most iconic
