@@ -25,7 +25,7 @@ const ArtePlus = () => {
       </Link>
       <Hero />
       <About />
-      <div className="ap-feature-image" style={{ backgroundImage: "url('/471119343.jpg')" }} />
+      <div className="ap-feature-image" />
       <Suites />
       <Amenities />
       <Transport />

@@ -11,10 +11,7 @@ const Hero = () => {
 
     return (
         <section className="ap-hero" id="hero">
-            <div
-                className="ap-hero__bg"
-                style={{ backgroundImage: "url('/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg')" }}
-            />
+            <div className="ap-hero__bg" />
             <div className="ap-hero__overlay" />
 
             <div className="ap-hero__content">
