@@ -9,6 +9,22 @@ import '../ArtePlus.scss'
 const Footer = () => {
     return (
         <footer className="ap-footer" id="contact">
+            {/* Conversion Endpoint CTA */}
+            <div className="ap-footer__cta">
+                <h2 className="ap-footer__cta-title">Ready for Your Stay?</h2>
+                <p className="ap-footer__cta-desc">Secure your preferred dates at Arte Plus.</p>
+                <div className="ap-footer__cta-actions">
+                    <a 
+                        href="https://www.airbnb.com/users/profile/1469224031223495524?previous_page_name=PdpHomeMarketplace" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="ap-btn-book ap-btn-book--large"
+                    >
+                        Book Now
+                    </a>
+                </div>
+            </div>
+
             <div className="ap-footer__inner">
 
                 {/* Brand */}
@@ -36,7 +52,9 @@ const Footer = () => {
                         Jalan Ampang, 55000<br />
                         Kuala Lumpur, Malaysia
                     </p>
-                    <a href="tel:+60138601915" className="ap-footer__link">013-860 1915</a>
+                    <a href="https://wa.me/60198540955" target="_blank" rel="noopener noreferrer" className="ap-footer__link">
+                        019-854 0955 (WhatsApp)
+                    </a>
                 </div>
 
             </div>

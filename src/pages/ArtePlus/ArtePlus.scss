@@ -100,25 +100,40 @@ $lg:             1024px;
   }
 }
 
-.ap-header__contact {
+.ap-header__actions {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 1.5rem;
-  font-size: 0.95rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  gap: 1rem;
 
   @media (max-width: $lg) { display: none !important; }
 }
 
+.ap-btn-book {
+  font-family: $font;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $text-light;
+  background: rgba(205, 115, 148, 0.9);
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all $t;
+  box-shadow: 0 4px 15px rgba(205, 115, 148, 0.3);
 
-.ap-header__divider {
-  width: 1.5px;
-  height: 24px;
-  background: rgba(255, 255, 255, 0.5);
-  .ap-header--scrolled & { background: rgba(0, 0, 0, 0.2); }
+  &:hover {
+    background: rgba(205, 115, 148, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(205, 115, 148, 0.4);
+    color: $text-light;
+  }
+
+  .ap-header--scrolled & {
+    background: $text;
+    color: $text-light;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    &:hover { background: rgba(205, 115, 148, 1); box-shadow: 0 6px 20px rgba(205, 115, 148, 0.4); }
+  }
 }
 
 .ap-header__mobile-toggle {
@@ -1129,6 +1144,42 @@ $lg:             1024px;
 // ══════════════════════════════════════════════
 // FOOTER
 // ══════════════════════════════════════════════
+.ap-footer__cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  background: rgba(205, 115, 148, 0.1); 
+  border-radius: $radius-lg;
+  
+  @media (max-width: $md) {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.ap-footer__cta-title {
+  font-family: $font-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: $text-light;
+  margin: 0 0 1rem;
+}
+
+.ap-footer__cta-desc {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 2rem;
+}
+
+.ap-btn-book--large {
+  font-size: 1.25rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  
+  @media (max-width: $md) {
+    font-size: 1.1rem;
+    padding: 0.8rem 2.5rem;
+  }
+}
+
 .ap-footer {
   background: $footer-bg;
   padding: 6rem 4rem;
@@ -1197,4 +1248,40 @@ $lg:             1024px;
   color: $text-light;
   line-height: 1.6;
   margin: 0;
+}
+
+// ══════════════════════════════════════════════
+// FLOATING WHATSAPP BUTTON
+// ══════════════════════════════════════════════
+.ap-fab-wa {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 10000;
+  transition: all $t;
+  cursor: pointer;
+
+  svg { width: 35px; height: 35px; }
+
+  &:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+  }
+
+  @media (max-width: $md) {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 50px;
+    height: 50px;
+    svg { width: 28px; height: 28px; }
+  }
 }

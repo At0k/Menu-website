@@ -55,10 +55,15 @@ const Header = () => {
             </button>
 
             {/* Contact Info Right */}
-            <div className="ap-header__contact">
-                <span>AMPANG, KL</span>
-                <div className="ap-header__divider" />
-                <span>+60138601915</span>
+            <div className="ap-header__actions">
+                <a 
+                    href="https://www.airbnb.com/users/profile/1469224031223495524?previous_page_name=PdpHomeMarketplace" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="ap-btn-book"
+                >
+                    Book Now
+                </a>
             </div>
 
             {/* Mobile Toggle Icons */}
