@@ -37,7 +37,7 @@ const Header = () => {
         <header className={`ap-header ${scrolled ? 'ap-header--scrolled' : ''} ${hidden ? 'ap-header--hidden' : ''} ${isMenuOpen ? 'ap-header--menu-open' : ''}`}>
             
             {/* Nav Left (4 Links) */}
-            <nav className="ap-header__nav-left">
+            <nav className="ap-header__nav-left" aria-label="Desktop Navigation">
                 <button onClick={() => scrollTo('about')}>About Us</button>
                 <button onClick={() => scrollTo('suites')}>Suites</button>
                 <button onClick={() => scrollTo('location')}>Location</button>
@@ -45,10 +45,14 @@ const Header = () => {
             </nav>
 
             {/* Centered Logo */}
-            <div className="ap-header__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <button 
+                className="ap-header__logo" 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                aria-label="Back to top"
+            >
                 ALG SUITE
                 <span className="ap-header__logo-sub">Resort & Tour</span>
-            </div>
+            </button>
 
             {/* Contact Info Right */}
             <div className="ap-header__contact">
@@ -58,22 +62,30 @@ const Header = () => {
             </div>
 
             {/* Mobile Toggle Icons */}
-            <div className="ap-header__mobile-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <button 
+                className="ap-header__mobile-toggle" 
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMenuOpen}
+            >
                 {isMenuOpen ? (
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 ) : (
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                         <path d="M4 8h16M4 16h16" />
                     </svg>
                 )}
-            </div>
+            </button>
 
             {/* Mobile Menu Overlay - Move to Portal to avoid clipping by Header's backdrop-filter */}
             {typeof document !== 'undefined' && createPortal(
-                <div className={`ap-header__mobile-overlay ${isMenuOpen ? 'ap-header__mobile-overlay--open' : ''}`}>
-                    <nav className="ap-header__mobile-nav">
+                <div 
+                    className={`ap-header__mobile-overlay ${isMenuOpen ? 'ap-header__mobile-overlay--open' : ''}`}
+                    aria-hidden={!isMenuOpen}
+                >
+                    <nav className="ap-header__mobile-nav" aria-label="Mobile Navigation">
                         <button onClick={() => scrollTo('about')}>About Us</button>
                         <button onClick={() => scrollTo('suites')}>Suites</button>
                         <button onClick={() => scrollTo('amenities')}>Amenities</button>

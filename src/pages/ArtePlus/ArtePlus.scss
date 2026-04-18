@@ -43,6 +43,11 @@ $lg:             1024px;
   color: $text;
   overflow-x: hidden;
   * { box-sizing: border-box; }
+
+  button:focus-visible, a:focus-visible {
+    outline: 2px solid $gold;
+    outline-offset: 4px;
+  }
 }
 
 // ══════════════════════════════════════════════

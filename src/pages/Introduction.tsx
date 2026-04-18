@@ -6,12 +6,12 @@ import './Introduction.scss'
 // IntroHeader  ← edit the logo / top title here
 // ─────────────────────────────────────────────
 const IntroHeader = () => (
-  <div className="intro__header">
+  <header className="intro__header">
     <h2 className="intro__logo">
       ALG SUITE<br />
       <span className="intro__logo-sub">Resort &amp; Tour</span>
     </h2>
-  </div>
+  </header>
 )
 
 // ─────────────────────────────────────────────
@@ -35,7 +35,17 @@ const IntroPanel = ({ image, title, subtitle, onClick, expanding, dimmed }: Intr
   ].filter(Boolean).join(' ')
 
   return (
-    <div className={cls} onClick={onClick}>
+    <button 
+      className={cls} 
+      onClick={onClick}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
+      aria-label={`${title} ${subtitle}`}
+    >
       <div
         className="intro__panel-bg"
         style={{ backgroundImage: `url('${image}')` }}
@@ -45,7 +55,7 @@ const IntroPanel = ({ image, title, subtitle, onClick, expanding, dimmed }: Intr
         <h1 className="intro__panel-title">{title}</h1>
         <p className="intro__panel-subtitle">{subtitle}</p>
       </div>
-    </div>
+    </button>
   )
 }
 
@@ -81,7 +91,7 @@ const Introduction = () => {
   }
 
   return (
-    <div className={`intro${active ? ' intro--transitioning' : ''}`}>
+    <main className={`intro${active ? ' intro--transitioning' : ''}`}>
       <IntroHeader />
       {PANELS.map(panel => (
         <IntroPanel
@@ -94,7 +104,7 @@ const Introduction = () => {
           onClick={() => handleClick(panel)}
         />
       ))}
-    </div>
+    </main>
   )
 }
 

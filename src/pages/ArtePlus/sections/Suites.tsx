@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../ArtePlus.scss'
 
 // ─────────────────────────────────────────────
@@ -63,7 +63,19 @@ const SUITES: Suite[] = [
 // SuiteCard  ← individual room card
 // ─────────────────────────────────────────────
 const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (units: SuiteUnit[]) => void }) => (
-    <div className="ap-suites__card">
+    <div 
+        className="ap-suites__card"
+        onClick={() => onBook(suite.units)}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                onBook(suite.units);
+            }
+        }}
+        aria-label={`View booking options for ${suite.type}`}
+    >
         <div className="ap-suites__card-img-wrap">
             <img className="ap-suites__card-img" src={suite.image} alt={suite.type} />
         </div>
@@ -74,7 +86,10 @@ const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (units: SuiteUnit[
             </div>
         </div>
         <div className="ap-suites__card-popup">
-            <button onClick={(e) => { e.stopPropagation(); onBook(suite.units); }}>
+            <button 
+                onClick={(e) => { e.stopPropagation(); onBook(suite.units); }}
+                tabIndex={-1} // Parent handles focus
+            >
                 Book
             </button>
         </div>
@@ -84,35 +99,62 @@ const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (units: SuiteUnit[
 // ─────────────────────────────────────────────
 // SuitesModal  ← unit selection popup
 // ─────────────────────────────────────────────
-const SuitesModal = ({ units, onClose }: { units: SuiteUnit[]; onClose: () => void }) => (
-    <div className="ap-suites__modal-overlay" onClick={onClose}>
-        <div className="ap-suites__modal" onClick={e => e.stopPropagation()}>
-            <button className="ap-suites__modal-close" onClick={onClose}>✕</button>
-            <h3 className="ap-suites__modal-title">Select a Unit</h3>
-            <div className="ap-suites__modal-list">
-                {units.map(unit => (
-                    <a
-                        key={unit.name}
-                        className="ap-suites__modal-item"
-                        href={unit.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {unit.name}
-                    </a>
-                ))}
+const SuitesModal = ({ units, onClose }: { units: SuiteUnit[]; onClose: () => void }) => {
+    useEffect(() => {
+        const handleEsc = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') onClose()
+        }
+        window.addEventListener('keydown', handleEsc)
+        document.body.style.overflow = 'hidden'
+        
+        return () => {
+            window.removeEventListener('keydown', handleEsc)
+            document.body.style.overflow = ''
+        }
+    }, [onClose])
+
+    return (
+        <div 
+            className="ap-suites__modal-overlay" 
+            onClick={onClose}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+        >
+            <div className="ap-suites__modal" onClick={e => e.stopPropagation()}>
+                <button 
+                    className="ap-suites__modal-close" 
+                    onClick={onClose}
+                    aria-label="Close modal"
+                >
+                    ✕
+                </button>
+                <h3 className="ap-suites__modal-title" id="modal-title">Select a Unit</h3>
+                <div className="ap-suites__modal-list">
+                    {units.map(unit => (
+                        <a
+                            key={unit.name}
+                            className="ap-suites__modal-item"
+                            href={unit.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {unit.name}
+                        </a>
+                    ))}
+                </div>
+                <a
+                    className="ap-suites__modal-airbnb"
+                    href={AIRBNB_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View all on Airbnb →
+                </a>
             </div>
-            <a
-                className="ap-suites__modal-airbnb"
-                href={AIRBNB_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View all on Airbnb →
-            </a>
         </div>
-    </div>
-)
+    )
+}
 
 // ─────────────────────────────────────────────
 // Suites  ← root component

@@ -72,6 +72,15 @@ $breakpoint-md:       768px;
     opacity   $transition-speed $transition-ease,
     transform $transition-speed $transition-ease;
 
+  // Button reset
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  color: inherit;
+  width: 100%;
+
   @media (min-width: $breakpoint-md) {
     min-height: 100vh;
 
@@ -82,7 +91,7 @@ $breakpoint-md:       768px;
     &:first-child { clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%); }
     &:last-child  { clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%); margin-left: -4%; }
 
-    &:hover {
+    &:hover, &:focus-visible {
       flex: $panel-expand-ratio;
       z-index: 10;
 
@@ -91,6 +100,11 @@ $breakpoint-md:       768px;
       .intro__panel-text    { transform: scale(1.08); }
       .intro__panel-title   { color: rgba(255, 255, 255, 1); }
       .intro__panel-subtitle{ color: rgba(255, 255, 255, 0.9); }
+    }
+
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: -4px;
     }
   }
 
