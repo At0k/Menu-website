@@ -14,7 +14,6 @@
   }
 }
 
-.ap-about,
 .ap-suites,
 .ap-amenities,
 .ap-transport,
@@ -30,16 +29,6 @@
   @media (max-width: $md) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-}
-
-.ap-about {
-  margin-top: 100vh;
-  padding-top: 6rem;
-
-  @media (max-width: $md) {
-    margin-top: 0;
-    padding-top: 4rem;
   }
 }
 
@@ -138,8 +127,16 @@
   color: #1e1e1e;
 }
 
-.ap-hero__cta::before,
-.ap-hero__cta::after {
+.ap-hero__cta--book {
+  color: #ffffff;
+}
+
+.ap-hero__cta--book .ap-swap-btn__label {
+  color: inherit;
+}
+
+.ap-hero__cta--rooms::before,
+.ap-hero__cta--rooms::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -151,11 +148,11 @@
   z-index: 2;
 }
 
-.ap-hero__cta::before {
+.ap-hero__cta--rooms::before {
   left: 0.95rem;
 }
 
-.ap-hero__cta::after {
+.ap-hero__cta--rooms::after {
   right: 0.95rem;
 }
 
@@ -201,11 +198,11 @@
     display: inline-flex;
   }
 
-  .ap-hero__cta::before {
+  .ap-hero__cta--rooms::before {
     left: 0.85rem;
   }
 
-  .ap-hero__cta::after {
+  .ap-hero__cta--rooms::after {
     right: 0.85rem;
   }
 }
