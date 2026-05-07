@@ -8,29 +8,36 @@
   height: 100vh;
   min-height: 785px;
   overflow: hidden;
-  z-index: 0;        
+  z-index: 0;
   background: #000;
 
-  @media (max-width: $md) { 
+  @media (max-width: $md) {
     position: relative;
-    min-height: 100dvh; 
+    min-height: 100dvh;
   }
 }
 
-.ap-about, .ap-suites, .ap-amenities, .ap-transport, .ap-nearby, .ap-footer, .ap-location, .ap-feature-image {
+.ap-about,
+.ap-suites,
+.ap-amenities,
+.ap-transport,
+.ap-nearby,
+.ap-footer,
+.ap-location,
+.ap-feature-image {
   position: relative;
   z-index: 10;
-  background: $bg; 
-  box-shadow: 0 -20px 40px rgba(0,0,0,0.1); 
+  background: $bg;
+  box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.1);
 
   @media (max-width: $md) {
-     padding-left: 1.5rem;
-     padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
 .ap-about {
-  margin-top: 100vh; // Push down all sections to reveal fixed Hero underneath
+  margin-top: 100vh;
   padding-top: 6rem;
 
   @media (max-width: $md) {
@@ -46,8 +53,8 @@
   background-image: url('/471119343.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; // Parallax effect
-  box-shadow: inset 0 0 100px rgba(0,0,0,0.2);
+  background-attachment: fixed;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
 
   @media (max-width: $md) {
     background-attachment: scroll;
@@ -67,140 +74,128 @@
 .ap-hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45); // #00000073
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .ap-hero__content {
   position: relative;
   height: 100%;
   display: flex;
-  flex-direction: column;
-}
-
-.ap-hero__back {
-  position: fixed; 
-  top: 100px; // Lowered for Desktop/Tablet as requested
-  left: 3rem;
-  z-index: 10005; 
-  width: 50px;
-  height: 50px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.5); // Slightly darker for better contrast on white backgrounds
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  color: #fff;
-  transition: all $t;
-  cursor: pointer;
-  pointer-events: auto !important;
-
-  @media (max-width: $md) {
-    top: 1.25rem; // Keep high on mobile to save space
-    left: 1.25rem;
-    width: 38px;
-    height: 38px;
-    background: rgba(0, 0, 0, 0.4);
-  }
-
-  &:hover {
-    background: $gold;
-    border-color: $gold;
-    transform: translateX(-5px);
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-  }
-
-  // Hide when header is scrolled (past hero)
-  .ap-header--scrolled ~ & {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateY(-10px);
-  }
-
-  svg { width: 24px; height: 24px; @media (max-width: $md) { width: 18px; height: 18px; } }
+  padding: clamp(5rem, 10vh, 8rem) 1.25rem 4rem;
 }
 
-.ap-hero__top {
-  position: absolute;
-  top: 15%;
-  left: 10%;
-  width: 100%;
-
-  @media (max-width: $lg) {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: auto; // Push to center group
-    text-align: center;
-  }
+.ap-hero__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.55rem;
+  margin-top: -2rem;
+  max-width: 920px;
 }
 
 .ap-hero__title {
   font-family: $font;
-  font-size: clamp(2.5rem, 8vw, 9.375rem); 
-  font-weight: 600;
-  color: rgba(255,255,255,0.7);
-  letter-spacing: 0.03em;
-  text-shadow: 4px 8px 4px rgba(0,0,0,0.25);
+  font-size: clamp(3rem, 9vw, 8rem);
+  font-weight: 500;
+  color: rgba(228, 155, 192, 0.94);
+  letter-spacing: 0.04em;
+  text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
-}
-
-.ap-hero__bottom {
-  position: absolute;
-  top: 40%;
-  right: 15%;
-
-  @media (max-width: $lg) {
-    position: relative;
-    top: 0;
-    right: 0;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+  line-height: 0.95;
 }
 
 .ap-hero__subtitle {
   font-family: $font;
-  font-size: clamp(1.8rem, 6vw, 7.5rem); 
+  font-size: clamp(1rem, 2.4vw, 1.8rem);
   font-weight: 500;
-  color: rgba(255,255,255,0.7);
-  text-shadow: 4px 8px 4px rgba(0,0,0,0.25);
+  color: rgba(240, 199, 216, 0.92);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   margin: 0;
-}
-
-.ap-hero__cta-wrapper {
-  position: absolute;
-  bottom: 15%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: $lg) {
-    position: relative;
-    bottom: 0;
-    margin-bottom: auto; // Balance the group
-  }
+  letter-spacing: 0.03em;
 }
 
 .ap-hero__cta {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.75rem;
+  min-width: 190px;
+  min-height: 46px;
+  padding: 0.85rem 1.3rem;
   font-family: $font;
-  font-size: 1.875rem; 
+  font-size: 0.95rem;
   font-weight: 500;
-  color: $text-light;
-  background: rgba(205, 115, 148, 0.7); 
-  border: none;
-  border-radius: 30px;
-  padding: 1rem 3rem;
-  cursor: pointer;
-  transition: all $t;
-  
-  @media (max-width: $md) {
-    font-size: 1.25rem;
-    padding: 0.8rem 2.5rem;
-  }
-
-  &:hover { background: rgba(205, 115, 148, 0.9); transform: scale(1.05); }
+  letter-spacing: 0.02em;
+  color: #1e1e1e;
+  z-index: 2;
 }
 
+.ap-hero__cta::before,
+.ap-hero__cta::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #222;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.ap-hero__cta::before {
+  left: 0.95rem;
+}
+
+.ap-hero__cta::after {
+  right: 0.95rem;
+}
+
+.ap-hero__cta .ap-swap-btn__label {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: $md) {
+  .ap-hero__content {
+    padding: 4.75rem 1rem 4.5rem;
+  }
+
+  .ap-hero__center {
+    margin-top: 0;
+    gap: 0.45rem;
+  }
+
+  .ap-hero__title {
+    font-size: clamp(2.8rem, 16vw, 4.8rem);
+  }
+
+  .ap-hero__subtitle {
+    font-size: 0.95rem;
+  }
+
+  .ap-hero__cta {
+    left: 1rem;
+    bottom: 1.25rem;
+    min-width: 184px;
+  }
+
+  .ap-hero__cta::before {
+    left: 0.85rem;
+  }
+
+  .ap-hero__cta::after {
+    right: 0.85rem;
+  }
+}
+
+@media (min-width: $lg) {
+  .ap-hero__cta {
+    left: 6rem;
+    bottom: 8rem;
+    min-width: 210px;
+    min-height: 48px;
+  }
+}

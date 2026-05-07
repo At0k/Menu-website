@@ -47,3 +47,80 @@ html, body {
 @keyframes vt-fade-in {
   from { opacity: 0; }
 }
+
+/* Shared action button animation */
+.ap-swap-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ap-swap-btn__label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition:
+    transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ap-swap-btn__label--default {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.ap-swap-btn__label--hover {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.ap-swap-btn:hover {
+  background: #3b241d;
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(59, 36, 29, 0.22);
+}
+
+.ap-swap-btn:hover .ap-swap-btn__label--default {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.ap-swap-btn:hover .ap-swap-btn__label--hover {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.ap-swap-btn--light {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1f1f1f;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.ap-swap-btn--light .ap-swap-btn__label--hover {
+  color: #ffffff;
+}
+
+.ap-swap-btn--dark {
+  background: rgba(143, 86, 113, 0.95);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(143, 86, 113, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ap-swap-btn--dark .ap-swap-btn__label--hover {
+  color: #ffffff;
+}
