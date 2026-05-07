@@ -9,12 +9,12 @@ export default {
             colors: {
                 primary: '#7c4d6a',
                 accent: '#bfa2c7',
-                'bg-light': '#e5e5e5',
+                'bg-light': '#ffffff',
                 'bg-dark': '#24242a',
             },
             fontFamily: {
                 heading: ['"Cormorant Garamond"', 'serif'],
-                body: ['Montserrat', 'sans-serif'],
+                body: ['"Afacad Flux"', 'sans-serif'],
                 brand: ['"Afacad Flux"', 'sans-serif'],
             },
         },

@@ -1,27 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --font-heading: 'Afacad Flux', sans-serif;
-  --font-body:    'Afacad Flux', sans-serif;
-  --font-brand:   'Afacad Flux', sans-serif;
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Afacad Flux", sans-serif;
+  --font-brand: "Afacad Flux", sans-serif;
 
-  --color-primary:    #7c4d6a;
-  --color-accent:     #bfa2c7;
-  --color-bg-light:   #ffffff;
-  --color-bg-dark:    #24242a;
+  --color-primary: #7c4d6a;
+  --color-accent: #bfa2c7;
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #24242a;
   --color-text-light: #000000;
-  --color-text-dark:  #ffffff;
+  --color-text-dark: #ffffff;
 }
 
 /* ─── Global Reset ────────────────────────────────
    Only the bare minimum — all visual styling lives
    in each page's own .scss file.
 ──────────────────────────────────────────────────*/
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -42,10 +45,14 @@ html, body {
 }
 
 @keyframes vt-fade-out {
-  to { opacity: 0; }
+  to {
+    opacity: 0;
+  }
 }
 @keyframes vt-fade-in {
-  from { opacity: 0; }
+  from {
+    opacity: 0;
+  }
 }
 
 /* Shared action button animation */
@@ -88,7 +95,7 @@ html, body {
 }
 
 .ap-swap-btn:hover {
-  background: #3b241d;
+  background: #5e5e5e;
   color: #ffffff;
   box-shadow: 0 10px 20px rgba(59, 36, 29, 0.22);
 }
@@ -107,7 +114,6 @@ html, body {
   background: rgba(255, 255, 255, 0.95);
   color: #1f1f1f;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .ap-swap-btn--light .ap-swap-btn__label--hover {

@@ -109,16 +109,16 @@
 
   @media (min-width: $lg) {
     .ap-header__brand-mark {
-      width: 34px;
-      height: 34px;
+      width: 74px;
+      height: 74px;
     }
 
     .ap-header__brand-title {
-      font-size: 1.05rem;
+      font-size: 1.55rem;
     }
 
     .ap-header__brand-subtitle {
-      font-size: 0.76rem;
+      font-size: 0.96rem;
     }
   }
 
@@ -126,16 +126,16 @@
     gap: 0.35rem;
 
     .ap-header__brand-mark {
-      width: 24px;
-      height: 24px;
+      width: 48px;
+      height: 48px;
     }
 
     .ap-header__brand-title {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     .ap-header__brand-subtitle {
-      font-size: 0.62rem;
+      font-size: 0.82rem;
     }
   }
 }
@@ -169,7 +169,7 @@
     transition: background-color $t, color $t, box-shadow $t;
 
     &:hover {
-      background: #3b241d;
+      background: #252525;
       color: $text-light;
       box-shadow: 0 10px 20px rgba(59, 36, 29, 0.22);
     }
@@ -248,7 +248,7 @@
   transition: background-color $t, box-shadow $t, color $t;
 
   &:hover {
-    background: #3b241d;
+    background: #573544;
     box-shadow: 0 14px 26px rgba(59, 36, 29, 0.24);
   }
 
