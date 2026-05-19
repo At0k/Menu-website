@@ -31,7 +31,7 @@ function getHttpsOptions(): { key: Buffer; cert: Buffer } | undefined {
         key: fs.readFileSync(keyPath),
         cert: fs.readFileSync(certPath),
       }
-    } catch (error) {
+    } catch {
       console.warn('Error reading certificate files, falling back to default HTTPS')
       return undefined
     }

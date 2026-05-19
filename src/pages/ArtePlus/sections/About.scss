@@ -12,13 +12,41 @@
   align-items: center;
 
   @media (min-width: $lg) {
-    grid-template-columns: 190px minmax(0, 1fr) 190px;
-    grid-template-rows: 1fr 1fr;
-    gap: 2.25rem 3.25rem;
+    grid-template-columns: 220px minmax(0, 1fr) 220px;
+    grid-template-rows: auto;
+    gap: 2.25rem 3.5rem;
     padding: 5.75rem 2.5rem 5.25rem;
     max-width: 1280px;
     margin: 0 auto;
-    align-items: stretch;
+    align-items: center;
+  }
+}
+
+.ap-about__side {
+  display: contents;
+
+  @media (min-width: $lg) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+}
+
+.ap-about__side--left {
+  @media (min-width: $lg) {
+    grid-column: 1;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 0.4rem;
+  }
+}
+
+.ap-about__side--right {
+  @media (min-width: $lg) {
+    grid-column: 3;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0.4rem;
   }
 }
 
@@ -32,17 +60,59 @@
   min-height: 0;
   position: relative;
 
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  &:hover img {
+  &:hover .ap-about__tile-img {
     transform: scale(1.02);
-    transition: transform 420ms cubic-bezier(0.2, 1, 0.3, 1);
+  }
+}
+
+.ap-about__tile-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ap-about__tile-img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 420ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.ap-about__tile-img--prev {
+  opacity: 1;
+  animation: ap-about-fade-out 900ms cubic-bezier(0.2, 1, 0.3, 1) both;
+}
+
+.ap-about__tile-img--current {
+  opacity: 1;
+
+  &.is-fading {
+    opacity: 0;
+    animation: ap-about-fade-in 900ms cubic-bezier(0.2, 1, 0.3, 1) both;
+  }
+}
+
+@keyframes ap-about-fade-in {
+  from {
+    opacity: 0;
+    filter: saturate(0.98);
+  }
+  to {
+    opacity: 1;
+    filter: saturate(1);
+  }
+}
+
+@keyframes ap-about-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -53,9 +123,11 @@
   width: min(100%, 118px);
 
   @media (min-width: $lg) {
+    grid-column: auto;
+    grid-row: auto;
     width: 150px;
-    justify-self: end;
-    align-self: start;
+    justify-self: auto;
+    align-self: auto;
   }
 }
 
@@ -66,10 +138,11 @@
   width: min(100%, 118px);
 
   @media (min-width: $lg) {
-    grid-column: 3;
-    justify-self: start;
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: auto;
     width: 150px;
-    align-self: start;
+    align-self: auto;
   }
 }
 
@@ -80,10 +153,11 @@
   width: min(100%, 118px);
 
   @media (min-width: $lg) {
-    grid-row: 2;
-    width: 150px;
-    justify-self: end;
-    align-self: end;
+    grid-column: auto;
+    grid-row: auto;
+    width: 172px;
+    justify-self: auto;
+    align-self: auto;
   }
 }
 
@@ -94,23 +168,25 @@
   width: min(100%, 118px);
 
   @media (min-width: $lg) {
-    grid-column: 3;
-    justify-self: start;
-    grid-row: 2;
-    width: 150px;
-    align-self: end;
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: auto;
+    width: 172px;
+    align-self: auto;
   }
 }
 
 .ap-about__reveal {
   opacity: 0;
-  transform: translateY(40px);
+  --ap-reveal-y: 40px;
+  transform: translate3d(var(--ap-tile-x, 0px), calc(var(--ap-tile-y, 0px) + var(--ap-reveal-y)), 0);
   will-change: transform, opacity;
-  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+  transition: opacity 0.8s ease, transform 0.9s cubic-bezier(0.2, 1, 0.3, 1);
 
   &.is-visible {
     opacity: 1;
-    transform: translateY(0);
+    --ap-reveal-y: 0px;
+    transform: translate3d(var(--ap-tile-x, 0px), calc(var(--ap-tile-y, 0px) + var(--ap-reveal-y)), 0);
   }
 }
 
@@ -127,7 +203,7 @@
 
   @media (min-width: $lg) {
     grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-row: 1;
     max-width: 44rem;
     padding: 0 1rem;
     align-self: center;
