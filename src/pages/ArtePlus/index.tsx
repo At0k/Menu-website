@@ -20,8 +20,8 @@ const ArtePlus = () => {
       <Hero />
       <About />
       <div className="ap-feature-image" />
-      <Suites />
       <Amenities />
+      <Suites />
       <Transport />
       <Location />
       <NearbyAttractions />
