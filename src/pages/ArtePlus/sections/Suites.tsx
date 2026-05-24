@@ -169,7 +169,7 @@ const Suites = () => {
     return (
         <section className="ap-suites" id="suites">
             <div className="ap-suites__header">
-                <h2 className="ap-suites__title ap-title-serif" style={{ textAlign: 'center' }}>ALG SUITES</h2>
+                <h2 className="ap-suites__title ap-title-serif" style={{ textAlign: 'center' }}>ARTE PLUS SUITES</h2>
             </div>
 
             <div className="ap-suites__grid">
