@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import '../ArtePlus.scss'
 
 // ─────────────────────────────────────────────
@@ -16,8 +17,9 @@ interface SuiteUnit {
 
 interface Suite {
     id: string
-    type: string       // e.g. "The Studio"
+    type: string       // e.g. "STUDIO"
     bedrooms: string   // e.g. "1 Bedroom"
+    specs: string      // e.g. "1 Bedroom   1 Toilet   2 Person"
     image: string
     units: SuiteUnit[]
 }
@@ -26,8 +28,9 @@ interface Suite {
 const SUITES: Suite[] = [
     {
         id: 'studio',
-        type: 'The Studio',
+        type: 'Studio',
         bedrooms: '1 Bedroom',
+        specs: '1 Bedroom   1 Toilet   2 Person',
         image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
         units: [
             { name: 'Leisure Suite', link: 'https://www.airbnb.com/rooms/43399783' },
@@ -36,8 +39,9 @@ const SUITES: Suite[] = [
     },
     {
         id: 'duplex',
-        type: 'The Duplex',
+        type: 'Duplex',
         bedrooms: '2 Bedroom',
+        specs: '2 Bedroom   2 Toilet   4 Person',
         image: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80',
         units: [
             { name: 'Marvelous Suite', link: 'https://airbnb.com/h/klcc-alg-marvellous-suite' },
@@ -48,8 +52,9 @@ const SUITES: Suite[] = [
     },
     {
         id: 'triplex',
-        type: 'The Triplex',
+        type: 'Triplex',
         bedrooms: '3 Bedroom',
+        specs: '3 Bedroom   3 Toilet   6 Person',
         image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80',
         units: [
             { name: 'Premium Suite', link: 'https://airbnb.com/h/klcc-alg-premium-suite' },
@@ -62,16 +67,16 @@ const SUITES: Suite[] = [
 // ─────────────────────────────────────────────
 // SuiteCard  ← individual room card
 // ─────────────────────────────────────────────
-const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (units: SuiteUnit[]) => void }) => (
+const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (suite: Suite) => void }) => (
     <div 
         className="ap-suites__card"
-        onClick={() => onBook(suite.units)}
+        onClick={() => onBook(suite)}
         role="button"
         tabIndex={0}
         onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
-                onBook(suite.units);
+                onBook(suite);
             }
         }}
         aria-label={`View booking options for ${suite.type}`}
@@ -87,7 +92,7 @@ const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (units: SuiteUnit[
         </div>
         <div className="ap-suites__card-popup">
             <button 
-                onClick={(e) => { e.stopPropagation(); onBook(suite.units); }}
+                onClick={(e) => { e.stopPropagation(); onBook(suite); }}
                 tabIndex={-1} // Parent handles focus
             >
                 Book
@@ -99,7 +104,7 @@ const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (units: SuiteUnit[
 // ─────────────────────────────────────────────
 // SuitesModal  ← unit selection popup
 // ─────────────────────────────────────────────
-const SuitesModal = ({ units, onClose }: { units: SuiteUnit[]; onClose: () => void }) => {
+const SuitesModal = ({ suite, onClose }: { suite: Suite; onClose: () => void }) => {
     useEffect(() => {
         const handleEsc = (e: KeyboardEvent) => {
             if (e.key === 'Escape') onClose()
@@ -113,7 +118,7 @@ const SuitesModal = ({ units, onClose }: { units: SuiteUnit[]; onClose: () => vo
         }
     }, [onClose])
 
-    return (
+    return createPortal(
         <div 
             className="ap-suites__modal-overlay" 
             onClick={onClose}
@@ -121,7 +126,7 @@ const SuitesModal = ({ units, onClose }: { units: SuiteUnit[]; onClose: () => vo
             aria-modal="true"
             aria-labelledby="modal-title"
         >
-            <div className="ap-suites__modal" onClick={e => e.stopPropagation()}>
+            <div className="ap-suites__modal-card" onClick={e => e.stopPropagation()}>
                 <button 
                     className="ap-suites__modal-close" 
                     onClick={onClose}
@@ -129,30 +134,29 @@ const SuitesModal = ({ units, onClose }: { units: SuiteUnit[]; onClose: () => vo
                 >
                     ✕
                 </button>
-                <h3 className="ap-suites__modal-title" id="modal-title">Select a Unit</h3>
-                <div className="ap-suites__modal-list">
-                    {units.map(unit => (
-                        <a
-                            key={unit.name}
-                            className="ap-suites__modal-item"
-                            href={unit.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {unit.name}
-                        </a>
-                    ))}
+                <div className="ap-suites__modal-card-img-wrap">
+                    <img src={suite.image} alt={suite.type} />
                 </div>
-                <a
-                    className="ap-suites__modal-airbnb"
-                    href={AIRBNB_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View all on Airbnb →
-                </a>
+                <div className="ap-suites__modal-card-content">
+                    <h3 className="ap-suites__modal-card-title" id="modal-title">{suite.type}</h3>
+                    <p className="ap-suites__modal-card-specs">{suite.specs}</p>
+                    <div className="ap-suites__modal-card-units">
+                        {suite.units.map(unit => (
+                            <a
+                                key={unit.name}
+                                className="ap-suites__modal-card-unit"
+                                href={unit.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {unit.name}
+                            </a>
+                        ))}
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>,
+        document.body
     )
 }
 
@@ -160,15 +164,12 @@ const SuitesModal = ({ units, onClose }: { units: SuiteUnit[]; onClose: () => vo
 // Suites  ← root component
 // ─────────────────────────────────────────────
 const Suites = () => {
-    const [modalUnits, setModalUnits] = useState<SuiteUnit[] | null>(null)
+    const [modalSuite, setModalSuite] = useState<Suite | null>(null)
 
     return (
         <section className="ap-suites" id="suites">
             <div className="ap-suites__header">
-                <h2 className="ap-suites__title ap-title-serif">Signature Suites</h2>
-                <p className="ap-suites__desc">
-                    Curated living spaces designed for the modern traveler. Select your perfect stay.
-                </p>
+                <h2 className="ap-suites__title ap-title-serif" style={{ textAlign: 'center' }}>ALG SUITES</h2>
             </div>
 
             <div className="ap-suites__grid">
@@ -176,13 +177,13 @@ const Suites = () => {
                     <SuiteCard
                         key={suite.id}
                         suite={suite}
-                        onBook={(units) => setModalUnits(units)}
+                        onBook={(s) => setModalSuite(s)}
                     />
                 ))}
             </div>
 
-            {modalUnits && (
-                <SuitesModal units={modalUnits} onClose={() => setModalUnits(null)} />
+            {modalSuite && (
+                <SuitesModal suite={modalSuite} onClose={() => setModalSuite(null)} />
             )}
         </section>
     )
