@@ -1,47 +1,14 @@
 @use '../variables' as *;
 
-.ap-footer__cta {
-  text-align: center;
-  padding: 4rem 2rem;
-  margin-bottom: 2rem;
-  background: rgba(205, 115, 148, 0.1); 
-  border-radius: $radius-lg;
-  
-  @media (max-width: $md) {
-    padding: 3rem 1.5rem;
-  }
-}
-
-.ap-footer__cta-title {
-  font-family: $font-serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  color: $text-light;
-  margin: 0 0 1rem;
-}
-
-.ap-footer__cta-desc {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0 0 2rem;
-}
-
-.ap-btn-book--large {
-  font-size: 1.25rem;
-  padding: 1rem 3rem;
-  display: inline-block;
-  
-  @media (max-width: $md) {
-    font-size: 1.1rem;
-    padding: 0.8rem 2.5rem;
-  }
-}
-
 .ap-footer {
-  background: $footer-bg;
-  padding: 6rem 4rem;
+  position: relative;
+  background-image: linear-gradient(rgba(175, 112, 137, 0.92), rgba(175, 112, 137, 0.92)), url('/ViewArte.avif');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 4rem;
   color: $text-light;
 
-  @media (max-width: $md) { padding: 4rem 2rem; }
+  @media (max-width: $md) { padding: 2.5rem 2rem; }
 }
 
 .ap-footer__inner {
@@ -52,56 +19,131 @@
   margin: 0 auto;
 
   @media (max-width: $lg) { gap: 2rem; }
-  @media (max-width: $md) { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+  @media (max-width: $md) { grid-template-columns: 1fr; gap: 3rem; text-align: left; }
 }
 
-.ap-footer__logo {
-  font-size: 1.875rem; // 30px
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  margin: 0 0 2rem;
-  line-height: 1.2;
+.ap-footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: -1.5rem; // Pull the section up to align visually with Quick Links
 }
 
-.ap-footer__logo-sub {
-  display: block;
-  font-size: 1.2rem;
+.ap-footer__logo-img {
+  max-width: 160px; 
+  margin-bottom: -1.5rem; // Counteract the transparent padding in the image to bring text closer
+  margin-left: -1rem; // The image has some transparent space on the left, so this pulls it flush left
+}
+
+.ap-footer__brand-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+
+.ap-footer__brand-title {
+  font-family: $font;
+  font-size: 2.2rem; // Made text bigger
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
+  color: $text-light;
+}
+
+.ap-footer__brand-subtitle {
+  font-size: 1.1rem; // Made subtitle bigger
+  font-weight: 400;
+  letter-spacing: 0.08em; // slightly wider tracking
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0.4rem;
 }
 
 .ap-footer__brand-desc {
-  font-size: clamp(1rem, 2.5vw, 1.56rem);
-  color: $text-light;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   margin: 0;
+  max-width: 320px;
+  text-align: left;
 }
 
 .ap-footer__col {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.5rem; // Closer together for the list look
 }
 
 .ap-footer__col-title {
-  font-size: clamp(1.4rem, 4vw, 1.875rem);
-  font-weight: 800;
-  letter-spacing: 0.06em;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  font-weight: 600;
   color: $text-light;
   margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 1.2em;
+    background-color: #c13f7d; // Pink vertical bar
+  }
 }
 
 .ap-footer__link {
-  font-size: clamp(1rem, 2.5vw, 1.56rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem 0.8rem 0;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: 500;
   color: $text-light;
   text-decoration: none;
-  transition: opacity $t;
-  &:hover { opacity: 0.7; }
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all $t;
+  
+  &::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 1.5em;
+    background-color: #e0e0e0; // Light gray vertical bar
+    transition: background-color $t;
+  }
+
+  &:hover, &:focus, &:active {
+    background: #4a1c40; // Dark purple wide box
+    
+    &::before {
+      background-color: #4a1c40; // Bar also turns dark purple
+    }
+  }
+}
+
+.ap-footer__address-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 0;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 1.5em;
+    background-color: #e0e0e0; // Light gray vertical bar
+    margin-top: 0.3em;
+  }
 }
 
 .ap-footer__address {
-  font-size: clamp(1rem, 2.5vw, 1.56rem);
-  color: $text-light;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
   margin: 0;
 }

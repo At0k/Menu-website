@@ -90,64 +90,21 @@
 
   .ap-header__brand-mark {
     display: block;
-    width: 30px;
-    height: 30px;
+    height: 48px;
+    width: auto;
     object-fit: contain;
     flex-shrink: 0;
   }
 
-  .ap-header__brand-copy {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-  }
-
-  .ap-header__brand-title {
-    font-family: $font;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-
-  .ap-header__brand-subtitle {
-    font-family: $font;
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    opacity: 0.92;
-    margin-top: 0.12rem;
-  }
-
   @media (min-width: $lg) {
     .ap-header__brand-mark {
-      width: 74px;
       height: 74px;
-    }
-
-    .ap-header__brand-title {
-      font-size: 1.55rem;
-    }
-
-    .ap-header__brand-subtitle {
-      font-size: 0.96rem;
     }
   }
 
   @media (max-width: $md) {
-    gap: 0.35rem;
-
     .ap-header__brand-mark {
-      width: 48px;
       height: 48px;
-    }
-
-    .ap-header__brand-title {
-      font-size: 1rem;
-    }
-
-    .ap-header__brand-subtitle {
-      font-size: 0.82rem;
     }
   }
 

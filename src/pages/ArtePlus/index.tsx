@@ -6,7 +6,7 @@ import Suites from './sections/Suites'
 import Amenities from './sections/Amenities'
 import Transport from './sections/Transport'
 import Location from './sections/Location'
-import NearbyAttractions from './sections/NearbyAttractions'
+// import NearbyAttractions from './sections/NearbyAttractions'
 import Footer from './sections/Footer'
 
 // ─────────────────────────────────────────────
@@ -24,7 +24,7 @@ const ArtePlus = () => {
       <Suites />
       <Transport />
       <Location />
-      <NearbyAttractions />
+      {/* <NearbyAttractions /> */}
       <Footer />
       
       {/* Floating WhatsApp Button */}

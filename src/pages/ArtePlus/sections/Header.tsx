@@ -72,11 +72,7 @@ const Header = () => {
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         aria-label="Back to top"
                     >
-                        <img className="ap-header__brand-mark" src="/Official_Logo_NoBackground.png" alt="" aria-hidden="true" />
-                        <span className="ap-header__brand-copy">
-                            <span className="ap-header__brand-title">ALG HOTEL</span>
-                            <span className="ap-header__brand-subtitle">Resort & Tour</span>
-                        </span>
+                        <img className="ap-header__brand-mark" src="/Official_Logo_NoBackground.png" alt="ALG HOTEL Resort & Tour" />
                     </button>
                 </div>
 
@@ -128,11 +124,7 @@ const Header = () => {
                             }}
                             aria-label="Back to top"
                         >
-                            <img className="ap-header__brand-mark" src="/Official_Logo_NoBackground.png" alt="" aria-hidden="true" />
-                            <span className="ap-header__brand-copy">
-                                <span className="ap-header__brand-title">ALG HOTEL</span>
-                                <span className="ap-header__brand-subtitle">Resort & Tour</span>
-                            </span>
+                            <img className="ap-header__brand-mark" src="/Official_Logo_NoBackground.png" alt="ALG HOTEL Resort & Tour" />
                         </button>
 
                         <button

@@ -9,52 +9,39 @@ import '../ArtePlus.scss'
 const Footer = () => {
     return (
         <footer className="ap-footer" id="contact">
-            {/* Conversion Endpoint CTA */}
-            <div className="ap-footer__cta">
-                <h2 className="ap-footer__cta-title">Ready for Your Stay?</h2>
-                <p className="ap-footer__cta-desc">Secure your preferred dates at Arte Plus.</p>
-                <div className="ap-footer__cta-actions">
-                    <a 
-                        href="https://www.airbnb.com/users/profile/1469224031223495524?previous_page_name=PdpHomeMarketplace" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="ap-btn-book ap-btn-book--large"
-                    >
-                        Book Now
-                    </a>
-                </div>
-            </div>
-
             <div className="ap-footer__inner">
 
                 {/* Brand */}
                 <div className="ap-footer__brand">
-                    <p className="ap-footer__logo">ALG HOTEL</p>
-                    <p className="ap-footer__logo-sub">Resort &amp; Tour</p>
+                    <img src="/LogoOnly.png" alt="ALG Hotel Logo" className="ap-footer__logo-img" />
+                    <div className="ap-footer__brand-copy">
+                        <span className="ap-footer__brand-title">ALG HOTEL</span>
+                        <span className="ap-footer__brand-subtitle">Resort & Tour</span>
+                    </div>
                     <p className="ap-footer__brand-desc">
-                        Providing exceptional stays in the heart of Kuala Lumpur's most iconic
-                        architectural landmark.
+                        Providing exceptional stays in the heart of Kuala Lumpur's most iconic architectural landmark.
                     </p>
                 </div>
 
                 {/* Quick Links */}
                 <div className="ap-footer__col">
                     <h4 className="ap-footer__col-title">Quick Links</h4>
-                    <a href="#suites" className="ap-footer__link">Our Suites</a>
-                    <a href="#amenities" className="ap-footer__link">Amenities</a>
-                    <a href="#location" className="ap-footer__link">Location</a>
+                    <a href="#about" className="ap-footer__link">ABOUT</a>
+                    <a href="#amenities" className="ap-footer__link">AMENITIES</a>
+                    <a href="#suites" className="ap-footer__link">OUR SUITES</a>
+                    <a href="#transport" className="ap-footer__link">TRANSPORT</a>
+                    <a href="#location" className="ap-footer__link">LOCATION</a>
                 </div>
 
-                {/* Contact */}
+                {/* Location */}
                 <div className="ap-footer__col">
-                    <h4 className="ap-footer__col-title">Contact</h4>
-                    <p className="ap-footer__address">
-                        Jalan Ampang, 55000<br />
-                        Kuala Lumpur, Malaysia
-                    </p>
-                    <a href="https://wa.me/60198540955" target="_blank" rel="noopener noreferrer" className="ap-footer__link">
-                        019-854 0955 (WhatsApp)
-                    </a>
+                    <h4 className="ap-footer__col-title">Location</h4>
+                    <div className="ap-footer__address-wrap">
+                        <p className="ap-footer__address">
+                            Jalan Ampang, 55000<br />
+                            Kuala Lumpur, Malaysia
+                        </p>
+                    </div>
                 </div>
 
             </div>
