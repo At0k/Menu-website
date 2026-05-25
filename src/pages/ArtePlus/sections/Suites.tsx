@@ -8,7 +8,6 @@ import '../ArtePlus.scss'
 //   Hovering a card expands it (CSS only — edit in ArtePlus.scss)
 // ─────────────────────────────────────────────
 
-const AIRBNB_LINK = 'https://www.airbnb.com/users/show/229653690'
 
 interface SuiteUnit {
     name: string
