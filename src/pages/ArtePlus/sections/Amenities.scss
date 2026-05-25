@@ -7,7 +7,7 @@ $card-h-sm: clamp(240px, 42vh, 320px);
 // JS uses offsetTop + scrollY to measure progress, immune to overflow:hidden
 .am-section {
   position: relative;
-  height: 600vh; // 6 cards × 100vh = 5 viewports of scroll animation
+  height: 700vh; // 6 cards (500vh) + 1 extra 100vh for Suites section to overlap
   background: $bg-alt;
 }
 

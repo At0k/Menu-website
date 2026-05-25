@@ -95,12 +95,17 @@ const Amenities = () => {
 
       // How far we've scrolled INTO the section
       const scrolled = scrollY - sectionTop
+      
+      // Total pinned scroll distance is sectionH - vh (600vh)
       const scrollable = sectionH - vh
 
-      // Clamp progress 0→1 across the full scroll range of the section
-      const progress = Math.min(1, Math.max(0, scrolled / scrollable))
+      // We want the card animations to finish 100vh BEFORE the pin ends
+      const animationRange = scrollable - vh // 500vh
 
-      // Pin: use position:fixed while we're inside the section's scroll range
+      // Clamp progress 0→1 across the ANIMATION range only
+      const progress = Math.min(1, Math.max(0, scrolled / animationRange))
+
+      // Pin: use position:fixed while we're inside the total scrollable range
       if (scrolled <= 0) {
         // Before section: pin at its natural position
         pin.style.position = 'absolute'

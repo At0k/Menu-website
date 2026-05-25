@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import '../ArtePlus.scss'
 
@@ -164,9 +164,26 @@ const SuitesModal = ({ suite, onClose }: { suite: Suite; onClose: () => void }) 
 // ─────────────────────────────────────────────
 const Suites = () => {
     const [modalSuite, setModalSuite] = useState<Suite | null>(null)
+    const sectionRef = useRef<HTMLElement>(null)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible')
+                }
+            })
+        }, { threshold: 0.15 })
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current)
+        }
+
+        return () => observer.disconnect()
+    }, [])
 
     return (
-        <section className="ap-suites" id="suites">
+        <section className="ap-suites" id="suites" ref={sectionRef}>
             <div className="ap-suites__header">
                 <h2 className="ap-suites__title ap-title-serif" style={{ textAlign: 'center' }}>ARTE PLUS SUITES</h2>
             </div>
