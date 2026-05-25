@@ -36,11 +36,16 @@
 }
 
 .ap-header__bar {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
   width: 100%;
+
+  @media (min-width: $lg) {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+  }
 }
 
 .ap-header__identity {
@@ -104,7 +109,7 @@
 
   @media (max-width: $md) {
     .ap-header__brand-mark {
-      height: 48px;
+      height: 64px;
     }
   }
 
@@ -306,8 +311,8 @@
 
 .ap-header__brand--mobile {
   .ap-header__brand-mark {
-    width: 28px;
-    height: 28px;
+    width: auto;
+    height: 64px;
   }
 }
 
