@@ -5,18 +5,22 @@ import AstrumAmpang from './pages/AstrumAmpang'
 import PulauSemporna from './pages/PulauSemporna'
 import './App.css'
 
+import { HelmetProvider } from 'react-helmet-async'
+
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-bg-light font-body">
-        <Routes>
-          <Route path="/" element={<Introduction />} />
-          <Route path="/arte-plus" element={<ArtePlus />} />
-          <Route path="/astrum-ampang" element={<AstrumAmpang />} />
-          <Route path="/pulau-semporna" element={<PulauSemporna />} />
-        </Routes>
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <div className="min-h-screen bg-bg-light font-body">
+          <Routes>
+            <Route path="/" element={<Introduction />} />
+            <Route path="/arte-plus" element={<ArtePlus />} />
+            <Route path="/astrum-ampang" element={<AstrumAmpang />} />
+            <Route path="/pulau-semporna" element={<PulauSemporna />} />
+          </Routes>
+        </div>
+      </Router>
+    </HelmetProvider>
   )
 }
 

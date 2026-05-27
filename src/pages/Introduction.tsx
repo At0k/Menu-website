@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import './Introduction.scss'
 
 // ─────────────────────────────────────────────
@@ -53,7 +54,7 @@ const IntroPanel = ({ image, title, subtitle, location, onClick, expanding, dimm
       />
       <div className="intro__panel-overlay" />
       <div className="intro__panel-text">
-        <h1 className="intro__panel-title">{title}</h1>
+        <h2 className="intro__panel-title">{title}</h2>
         <p className="intro__panel-subtitle">{subtitle}</p>
       </div>
       <div className="intro__panel-location">
@@ -102,8 +103,14 @@ const Introduction = () => {
   }
 
   return (
-    <main className={`intro${active ? ' intro--transitioning' : ''}`}>
-      <IntroHeader />
+    <>
+      <Helmet>
+        <title>ALG Hotel Resort & Tour | Kuala Lumpur & Sabah</title>
+        <meta name="description" content="Explore our premium suites and tours in Kuala Lumpur (ASTRUM, ARTE+) and Sabah (BOHEY DULANG)." />
+      </Helmet>
+      <main className={`intro${active ? ' intro--transitioning' : ''}`}>
+        <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>ALG Hotel Resort & Tour</h1>
+        <IntroHeader />
       {PANELS.map(panel => (
         <IntroPanel
           key={panel.id}
@@ -116,7 +123,8 @@ const Introduction = () => {
           onClick={() => handleClick(panel)}
         />
       ))}
-    </main>
+      </main>
+    </>
   )
 }
 
