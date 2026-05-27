@@ -12,17 +12,17 @@ const DISTANCES = [
     { 
         place: 'KLIA / SUBANG AIRPORT', 
         time: '45 MINS',
-        image: '/1.4-Arte_Tower-1-Lobby.jpg'
+        image: '/klia.jpg'
     },
     { 
         place: 'KL CENTRAL', 
         time: '30 MINS',
-        image: '/arte-plus-jalan-ampan-my-kuala-lumpur-bc-5022267-0.jpg'
+        image: '/KLCentral.jpg'
     },
     { 
         place: 'TERMINAL BERSEPADU SELATAN (TBS)', 
         time: '20 MINS',
-        image: '/ViewArte.avif'
+        image: '/TerminalBusBersepadu.jpg'
     },
 ]
 

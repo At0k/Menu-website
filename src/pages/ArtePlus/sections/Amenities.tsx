@@ -6,7 +6,7 @@ type AmenityCard = { title: string; icon: ReactNode; image: string }
 const AMENITIES: AmenityCard[] = [
   {
     title: 'Self Check-In',
-    image: '/623247993.jpg',
+    image: '/selfCheckIn.jpeg',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M8 12h8M10 16h4" strokeLinecap="round" />
@@ -17,7 +17,7 @@ const AMENITIES: AmenityCard[] = [
   },
   {
     title: 'Pool',
-    image: '/471119343.jpg',
+    image: '/623247993.jpg',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M4 15c2 0 3-2 5-2s3 2 5 2 3-2 5-2M4 19c2 0 3-2 5-2s3 2 5 2 3-2 5-2M2 3l1.5 5h17L22 3" strokeLinecap="round" strokeLinejoin="round" />
@@ -58,7 +58,7 @@ const AMENITIES: AmenityCard[] = [
   },
   {
     title: 'Nearby Grocery',
-    image: '/arte-plus-jalan-ampan-my-kuala-lumpur-bc-5022267-0.jpg',
+    image: '/JayaGrocer.jpg',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.2 4H19" strokeLinecap="round" strokeLinejoin="round" />
