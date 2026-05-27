@@ -92,21 +92,24 @@ $card-h-sm: clamp(240px, 42vh, 320px);
 }
 
 .am-card__icon {
-  width: 46px;
-  height: 46px;
+  width: 64px;
+  height: 64px;
   color: $text;
   display: grid;
   place-items: center;
+  margin-bottom: 0.5rem;
 
   svg {
     width: 100%;
     height: 100%;
-    stroke: currentColor;
+    fill: currentColor;
+    stroke: none;
   }
 
   @media (max-width: $md) {
-    width: 28px;
-    height: 28px;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0.2rem;
   }
 }
 
