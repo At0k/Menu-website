@@ -6,7 +6,7 @@ import '../ArtePlus.scss'
 
 const WAZE_LINK = 'https://ul.waze.com/ul?venue_id=66650144.666829116.16676582&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location'
 const MAPS_LINK = 'https://maps.app.goo.gl/DXbYQFNDWyun61348'
-const MAP_EMBED = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.750497706638!2d101.72861517484517!3d3.1624247966803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f3e19d9329%3A0x9c5a0f0bdba948e4!2sArte%20Plus%20Ampang!5e0!3m2!1sen!2smy!4v1700000000000'
+const MAP_EMBED = 'https://maps.google.com/maps?q=Arte%20Plus%20Jalan%20Ampang,%203,%20Lorong%20Ampang%201,%20Kampung%20Berembang,%2055000%20Kuala%20Lumpur,%20Malaysia&t=&z=16&ie=UTF8&iwloc=&output=embed'
 
 const DISTANCES = [
     { 
