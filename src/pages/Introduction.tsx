@@ -22,12 +22,13 @@ interface IntroPanelProps {
   image: string
   title: string
   subtitle: string
+  location: string
   onClick: () => void
   expanding: boolean   // true when THIS panel is the one expanding
   dimmed: boolean   // true when ANOTHER panel is expanding
 }
 
-const IntroPanel = ({ image, title, subtitle, onClick, expanding, dimmed }: IntroPanelProps) => {
+const IntroPanel = ({ image, title, subtitle, location, onClick, expanding, dimmed }: IntroPanelProps) => {
   const cls = [
     'intro__panel',
     expanding ? 'intro__panel--expanding' : '',
@@ -55,6 +56,9 @@ const IntroPanel = ({ image, title, subtitle, onClick, expanding, dimmed }: Intr
         <h1 className="intro__panel-title">{title}</h1>
         <p className="intro__panel-subtitle">{subtitle}</p>
       </div>
+      <div className="intro__panel-location">
+        {location}
+      </div>
     </button>
   )
 }
@@ -63,9 +67,9 @@ const IntroPanel = ({ image, title, subtitle, onClick, expanding, dimmed }: Intr
 // Introduction  ← root page
 // ─────────────────────────────────────────────
 const PANELS = [
-  { id: 'astrum', image: '/ASTRUM-AMPANG.jpg', title: 'ASTRUM', subtitle: 'AMPANG', url: 'https://www.airbnb.com/rooms/1618879879705461558?source_impression_id=p3_1776490813_P3HCvmO9mTqPqWIw' },
-  { id: 'arte', image: '/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg', title: 'ARTE+', subtitle: 'AMPANG', path: '/arte-plus' },
-  { id: 'pulau', image: '/Semporna.jpg', title: 'BOHEY DULANG', subtitle: 'SEMPORNA', url: 'https://www.airbnb.com/rooms/1355859443271848941?source_impression_id=p3_1776489990_P3aVDGCClc3WoNRA' },
+  { id: 'astrum', image: '/ASTRUM-AMPANG.jpg', title: 'ASTRUM', subtitle: 'AMPANG', location: 'Kuala Lumpur', url: 'https://www.airbnb.com/rooms/1618879879705461558?source_impression_id=p3_1776490813_P3HCvmO9mTqPqWIw' },
+  { id: 'arte', image: '/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg', title: 'ARTE+', subtitle: 'AMPANG', location: 'Kuala Lumpur', path: '/arte-plus' },
+  { id: 'pulau', image: '/Semporna.jpg', title: 'BOHEY DULANG', subtitle: 'SEMPORNA', location: 'Sabah', url: 'https://www.airbnb.com/rooms/1355859443271848941?source_impression_id=p3_1776489990_P3aVDGCClc3WoNRA' },
 ]
 
 const Introduction = () => {
@@ -106,6 +110,7 @@ const Introduction = () => {
           image={panel.image}
           title={panel.title}
           subtitle={panel.subtitle}
+          location={panel.location}
           expanding={active === panel.id}
           dimmed={active !== null && active !== panel.id}
           onClick={() => handleClick(panel)}

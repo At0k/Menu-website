@@ -89,6 +89,7 @@ $breakpoint-md:       768px;
       .intro__panel-overlay { opacity: 0.3; }
       .intro__panel-title   { color: rgba(255, 255, 255, 1); }
       .intro__panel-subtitle{ color: rgba(255, 255, 255, 0.9); }
+      .intro__panel-location{ color: rgba(255, 255, 255, 0.9); }
     }
   }
 
@@ -111,6 +112,7 @@ $breakpoint-md:       768px;
       .intro__panel-text    { transform: scale(1.08); }
       .intro__panel-title   { color: rgba(255, 255, 255, 1); }
       .intro__panel-subtitle{ color: rgba(255, 255, 255, 0.9); }
+      .intro__panel-location{ color: rgba(255, 255, 255, 0.9); transform: translateX(-50%) scale(1.05); }
     }
 
     &:focus-visible {
@@ -134,6 +136,7 @@ $breakpoint-md:       768px;
     .intro__panel-overlay { opacity: 0.15; }
     // Text stays visible — browser VTA cross-fades into the new page
     .intro__panel-text    { transform: scale(1.06); }
+    .intro__panel-location{ transform: translateX(-50%) scale(1.06); }
   }
 }
 
@@ -200,4 +203,22 @@ $breakpoint-md:       768px;
   text-shadow: $text-shadow;
   margin: 0.25rem 0 0;
   transition: color $transition-speed $transition-ease;
+}
+
+// ─── Location (bottom text) ─────────────────────
+.intro__panel-location {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: $font-brand;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-shadow: $text-shadow;
+  margin: 0;
+  transition: color $transition-speed $transition-ease, transform $transition-speed $transition-ease;
+  width: max-content;
 }
