@@ -25,7 +25,7 @@ const Transport = () => {
 
                 <div className="ap-transport__cta-wrap">
                     <a 
-                        href="https://wa.me/message/YOUR_WHATSAPP_LINK" 
+                        href="https://wa.me/60198540955"
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="ap-swap-btn ap-swap-btn--whatsapp"

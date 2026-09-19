@@ -68,7 +68,7 @@ const IntroPanel = ({ image, title, subtitle, location, onClick, expanding, dimm
 // Introduction  ← root page
 // ─────────────────────────────────────────────
 const PANELS = [
-  { id: 'astrum', image: '/ASTRUM-AMPANG.jpg', title: 'ASTRUM', subtitle: 'AMPANG', location: 'Kuala Lumpur', url: 'https://www.airbnb.com/rooms/1618879879705461558?source_impression_id=p3_1776490813_P3HCvmO9mTqPqWIw' },
+  { id: 'astrum', image: '/AstrumProfile.jpeg', title: 'ASTRUM', subtitle: 'AMPANG', location: 'Kuala Lumpur', path: '/astrum-ampang' },
   { id: 'arte', image: '/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg', title: 'ARTE+', subtitle: 'AMPANG', location: 'Kuala Lumpur', path: '/arte-plus' },
   { id: 'pulau', image: '/Semporna.jpg', title: 'BOHEY DULANG', subtitle: 'SEMPORNA', location: 'Sabah', url: 'https://www.airbnb.com/rooms/1355859443271848941?source_impression_id=p3_1776489990_P3aVDGCClc3WoNRA' },
 ]

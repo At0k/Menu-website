@@ -1,0 +1,62 @@
+@use '../../styles/variables' as *;
+
+.not-found {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #16191d, #3e283a);
+  color: #fff;
+  text-align: center;
+}
+
+.not-found__content {
+  max-width: 36rem;
+}
+
+.not-found__eyebrow {
+  margin: 0 0 1.25rem;
+  color: #e6b6cf;
+  font-family: $font-brand;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.not-found h1 {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 9vw, 5.5rem);
+  font-weight: 500;
+}
+
+.not-found__content > p:not(.not-found__eyebrow) {
+  margin: 1rem auto 2rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: $font-brand;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.not-found__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #302530;
+  font-family: $font-brand;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.not-found__cta:hover {
+  background: #e6b6cf;
+}
+
+.not-found__cta:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}

@@ -5,10 +5,6 @@ const Hero = () => {
         document.getElementById('suites')?.scrollIntoView({ behavior: 'smooth' })
     }
 
-    const scrollToFooter = () => {
-        document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' })
-    }
-
     return (
         <section className="ap-hero" id="hero">
             <div className="ap-hero__bg" />
@@ -26,10 +22,6 @@ const Hero = () => {
                         <span className="ap-swap-btn__label ap-swap-btn__label--hover">Explore our rooms</span>
                     </button>
 
-                    <button type="button" className="ap-swap-btn ap-swap-btn--dark ap-hero__cta ap-hero__cta--book" onClick={scrollToFooter}>
-                        <span className="ap-swap-btn__label ap-swap-btn__label--default">Book with us</span>
-                        <span className="ap-swap-btn__label ap-swap-btn__label--hover">Book with us</span>
-                    </button>
                 </div>
             </div>
         </section>

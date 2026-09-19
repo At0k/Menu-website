@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom'
 import { createPortal } from 'react-dom'
 import './Header.scss'
 
-const NAV_ITEMS = [
+type NavigationItem = {
+    id: string
+    label: string
+}
+
+const NAV_ITEMS: NavigationItem[] = [
     { id: 'about', label: 'About' },
     { id: 'amenities', label: 'Amenities' },
     { id: 'suites', label: 'Suites' },
@@ -13,7 +18,17 @@ const NAV_ITEMS = [
 
 const BOOKING_LINK = 'https://www.airbnb.com/users/profile/1469224031223495524?previous_page_name=PdpHomeMarketplace'
 
-const Header = () => {
+type HeaderProps = {
+    navigationItems?: NavigationItem[]
+    bookingHref?: string
+    bookingExternal?: boolean
+}
+
+const Header = ({
+    navigationItems = NAV_ITEMS,
+    bookingHref = BOOKING_LINK,
+    bookingExternal = true,
+}: HeaderProps) => {
     const [scrolled, setScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -77,7 +92,7 @@ const Header = () => {
                 </div>
 
                 <nav className="ap-header__nav" aria-label="Primary navigation">
-                    {NAV_ITEMS.map(item => (
+                    {navigationItems.map(item => (
                         <button key={item.id} type="button" onClick={() => scrollTo(item.id)}>
                             <span className="ap-header__nav-label ap-header__nav-label--default">{item.label}</span>
                             <span className="ap-header__nav-label ap-header__nav-label--hover">{item.label}</span>
@@ -86,7 +101,11 @@ const Header = () => {
                 </nav>
 
                 <div className="ap-header__actions">
-                    <a href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className="ap-header__book">
+                    <a
+                        href={bookingHref}
+                        {...(bookingExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                        className="ap-header__book"
+                    >
                         <span className="ap-header__book-label ap-header__book-label--default">Book your stay</span>
                         <span className="ap-header__book-label ap-header__book-label--hover">Book your stay</span>
                     </a>
@@ -140,7 +159,7 @@ const Header = () => {
                     </div>
 
                     <nav id="mobile-navigation" className="ap-header__mobile-nav" aria-label="Mobile navigation">
-                        {NAV_ITEMS.map(item => (
+                        {navigationItems.map(item => (
                             <button
                                 key={item.id}
                                 type="button"
