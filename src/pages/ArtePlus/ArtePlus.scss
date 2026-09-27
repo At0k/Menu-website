@@ -4,6 +4,7 @@
 @use './sections/About.scss';
 @use './sections/Suites.scss';
 @use './sections/Amenities.scss';
+@use './sections/Contact.scss';
 @use './sections/Transport.scss';
 @use './sections/Location.scss';
 @use './sections/NearbyAttractions.scss';
@@ -19,6 +20,18 @@
 
 .ap-animate {
   animation: fadeInUp 1s cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+
+[data-ap-reveal] {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity .75s ease var(--ap-reveal-delay, 0ms), transform .75s cubic-bezier(.2,.7,.2,1) var(--ap-reveal-delay, 0ms);
+
+  &.is-visible { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-ap-reveal] { opacity: 1; transform: none; transition: none; }
 }
 
 @for $i from 1 through 10 {
@@ -44,5 +57,3 @@
     outline-offset: 4px;
   }
 }
-
-

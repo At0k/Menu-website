@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet-async'
+import Seo from '../components/Seo'
 import './Introduction.scss'
 
 // ─────────────────────────────────────────────
@@ -68,8 +68,8 @@ const IntroPanel = ({ image, title, subtitle, location, onClick, expanding, dimm
 // Introduction  ← root page
 // ─────────────────────────────────────────────
 const PANELS = [
-  { id: 'astrum', image: '/AstrumProfile.jpeg', title: 'ASTRUM', subtitle: 'AMPANG', location: 'Kuala Lumpur', path: '/astrum-ampang' },
-  { id: 'arte', image: '/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg', title: 'ARTE+', subtitle: 'AMPANG', location: 'Kuala Lumpur', path: '/arte-plus' },
+  { id: 'astrum', image: '/ArtePlus/AstrumProfile.jpeg', title: 'ASTRUM', subtitle: 'AMPANG', location: 'Kuala Lumpur', path: '/astrum-ampang' },
+  { id: 'arte', image: '/ArtePlus/2020_04_Project_Layout18.jpg', title: 'ARTE+', subtitle: 'AMPANG', location: 'Kuala Lumpur', path: '/arte-plus' },
   { id: 'pulau', image: '/Semporna.jpg', title: 'BOHEY DULANG', subtitle: 'SEMPORNA', location: 'Sabah', url: 'https://www.airbnb.com/rooms/1355859443271848941?source_impression_id=p3_1776489990_P3aVDGCClc3WoNRA' },
 ]
 
@@ -104,10 +104,21 @@ const Introduction = () => {
 
   return (
     <>
-      <Helmet>
-        <title>ALG Hotel Resort & Tour | Kuala Lumpur & Sabah</title>
-        <meta name="description" content="Explore our premium suites and tours in Kuala Lumpur (ASTRUM, ARTE+) and Sabah (BOHEY DULANG)." />
-      </Helmet>
+      <Seo
+        title="ALG Hotel Resort & Tour | Kuala Lumpur & Sabah Stays"
+        description="Explore ALG suite stays at Astrum Ampang and ARTE+ Jalan Ampang, plus the upcoming Bohey Dulang Floating Resort in Semporna, Sabah."
+        path="/"
+        image="/ArtePlus/2020_04_Project_Layout18.jpg"
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'ALG Hotel Resort & Tour',
+          url: typeof window === 'undefined' ? undefined : window.location.origin,
+          logo: typeof window === 'undefined' ? undefined : `${window.location.origin}/LogoOnly.png`,
+          telephone: '+60198540955',
+          areaServed: ['Kuala Lumpur', 'Sabah'],
+        }}
+      />
       <main className={`intro${active ? ' intro--transitioning' : ''}`}>
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>ALG Hotel Resort & Tour</h1>
         <IntroHeader />

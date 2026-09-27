@@ -26,13 +26,13 @@ type TileStyle = CSSProperties & {
 }
 
 const IMAGE_POOL: AboutImage[] = [
-    { src: '/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg', alt: 'Arte Plus exterior' },
-    { src: '/2020_04_Project_Layout18.jpg', alt: 'Arte Plus building' },
-    { src: '/623247993.jpg', alt: 'Arte Plus pool' },
-    { src: '/1.4-Arte_Tower-1-Lobby.jpg', alt: 'Arte Plus lobby' },
-    { src: '/471119343.jpg', alt: 'Arte Plus view' },
+    { src: '/ArtePlus/Arte-Plus-Klcc-By-Dreamscape-Apartment-Kuala-Lumpur-Exterior (1).jpg', alt: 'Arte Plus exterior' },
+    { src: '/ArtePlus/2020_04_Project_Layout18.jpg', alt: 'Arte Plus building' },
+    { src: '/ArtePlus/623247993.jpg', alt: 'Arte Plus pool' },
+    { src: '/ArtePlus/1.4-Arte_Tower-1-Lobby.jpg', alt: 'Arte Plus lobby' },
+    { src: '/ArtePlus/471119343.jpg', alt: 'Arte Plus view' },
     { src: '/ViewArte.avif', alt: 'Arte Plus courtyard' },
-    { src: '/arte-plus-jalan-ampan-my-kuala-lumpur-bc-5022267-0.jpg', alt: 'Arte Plus city view' },
+    { src: '/ArtePlus/arte-plus-jalan-ampan-my-kuala-lumpur-bc-5022267-0.jpg', alt: 'Arte Plus city view' },
 ]
 
 const DEFAULT_TILES: AboutTiles = {

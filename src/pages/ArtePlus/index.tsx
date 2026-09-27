@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'
+import Seo from '../../components/Seo'
 import './ArtePlus.scss'
 import Header from './sections/Header'
 import Hero from './sections/Hero'
@@ -7,6 +7,7 @@ import Suites from './sections/Suites'
 import Amenities from './sections/Amenities'
 import Transport from './sections/Transport'
 import Location from './sections/Location'
+import Contact from './sections/Contact'
 // import NearbyAttractions from './sections/NearbyAttractions'
 import Footer from './sections/Footer'
 
@@ -17,10 +18,26 @@ import Footer from './sections/Footer'
 const ArtePlus = () => {
     return (
     <>
-      <Helmet>
-        <title>Arte Plus Ampang Suites | ALG Hotel Resort & Tour</title>
-        <meta name="description" content="Book your luxurious stay at Arte Plus Jalan Ampang. Experience our studio, duplex, and triplex suites with premium amenities." />
-      </Helmet>
+      <Seo
+        title="ARTE+ Jalan Ampang Suites | Kuala Lumpur Stay | ALG"
+        description="Book an ALG studio, duplex or triplex suite at ARTE+ Jalan Ampang, Kuala Lumpur, with pool, gym, parking and direct Airbnb booking options."
+        path="/arte-plus"
+        image="/ArtePlus/2020_04_Project_Layout18.jpg"
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'LodgingBusiness',
+          name: 'ALG ARTE+ Jalan Ampang Suites',
+          description: 'Studio, duplex and triplex suite stays at ARTE+ Jalan Ampang, Kuala Lumpur.',
+          telephone: '+60198540955',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Jalan Ampang',
+            postalCode: '55000',
+            addressLocality: 'Kuala Lumpur',
+            addressCountry: 'MY',
+          },
+        }}
+      />
       <div className="ap-page">
         <Header />
       <Hero />
@@ -28,6 +45,7 @@ const ArtePlus = () => {
       <div className="ap-feature-image" />
       <Amenities />
       <Suites />
+      <Contact />
       <Transport />
       <Location />
       {/* <NearbyAttractions /> */}

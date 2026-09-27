@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
-import { Helmet } from 'react-helmet-async'
+import Seo from '../../components/Seo'
 import Header from '../ArtePlus/sections/Header'
 import Footer from '../ArtePlus/sections/Footer'
+import Transport from '../ArtePlus/sections/Transport'
+import Location from '../ArtePlus/sections/Location'
 import './AstrumAmpang.scss'
 
 const SUITES = [
@@ -89,15 +91,34 @@ const AstrumAmpang = () => {
 
   return (
     <div className="astrum-page" ref={pageRef}>
-      <Helmet>
-        <title>Astrum Ampang Suites | ALG Suite, Resort & Tour</title>
-        <meta name="description" content="Explore ALG Astrum suites beside Jelatek LRT Station, with direct booking links for modern Kuala Lumpur stays." />
-      </Helmet>
+      <Seo
+        title="Astrum Ampang Suites Near Jelatek LRT | Kuala Lumpur | ALG"
+        description="Explore seven ALG Astrum Ampang suites beside Jelatek LRT Station, with direct Airbnb booking links for connected Kuala Lumpur stays."
+        path="/astrum-ampang"
+        image="/ArtePlus/AstrumProfile.jpeg"
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'LodgingBusiness',
+          name: 'KLCC ALG Astrum Ampang Suites',
+          description: 'Modern ALG suite stays beside Jelatek LRT Station in Ampang, Kuala Lumpur.',
+          telephone: '+60198540955',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Jalan Jelatek, Taman Keramat',
+            postalCode: '54200',
+            addressLocality: 'Ampang',
+            addressRegion: 'Selangor',
+            addressCountry: 'MY',
+          },
+        }}
+      />
 
       <Header
         navigationItems={[
           { id: 'story', label: 'About' },
           { id: 'suites', label: 'Suites' },
+          { id: 'transport', label: 'Transport' },
+          { id: 'location', label: 'Location' },
           { id: 'enquire', label: 'Enquire' },
         ]}
         bookingHref="#suites"
@@ -158,6 +179,14 @@ const AstrumAmpang = () => {
           <div className="astrum-contact__panel" data-reveal><p className="astrum-kicker">WE ARE HERE TO HELP</p><h2>Have a stay in mind?</h2><p>Tell us your dates and preferred suite. Our team can point you to the right listing or help with an enquiry.</p><div className="astrum-contact__actions"><a className="astrum-button astrum-button--dark" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">WhatsApp ALG</a></div></div>
           <aside className="astrum-contact__resort" data-reveal><p>COMING NEXT · SEMPORNA, SABAH</p><h3>Bohey Dulang ALG<br />Floating Resort</h3><a href="https://airbnb.com/h/boheydulang-alg-floatingresort" target="_blank" rel="noopener noreferrer">Discover the resort <span aria-hidden="true">↗</span></a></aside>
         </section>
+
+        <Transport />
+        <Location
+          locationName="Astrum Ampang"
+          mapsLink="https://share.google/idNnHx34B6fkmwpJp"
+          wazeLink="https://www.waze.com/ul?q=Astrum%20Ampang%2C%20Jalan%20Jelatek%2C%20Taman%20Keramat%2C%20Ampang%2C%20Selangor&navigate=yes"
+          mapEmbed="https://maps.google.com/maps?q=Astrum%20Ampang,%20Jalan%20Jelatek,%20Taman%20Keramat,%2054200%20Ampang,%20Selangor,%20Malaysia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        />
       </main>
 
       <Footer

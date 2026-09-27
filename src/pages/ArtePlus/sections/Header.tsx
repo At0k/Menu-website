@@ -14,6 +14,7 @@ const NAV_ITEMS: NavigationItem[] = [
     { id: 'suites', label: 'Suites' },
     { id: 'transport', label: 'Transport' },
     { id: 'location', label: 'Location' },
+    { id: 'enquire', label: 'Enquire' },
 ]
 
 const BOOKING_LINK = 'https://www.airbnb.com/users/profile/1469224031223495524?previous_page_name=PdpHomeMarketplace'

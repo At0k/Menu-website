@@ -1,13 +1,15 @@
-import { Helmet } from 'react-helmet-async'
 import ComingSoon from '../../components/ComingSoon/ComingSoon'
+import Seo from '../../components/Seo'
 
 const PulauSemporna = () => {
     return (
         <>
-            <Helmet>
-                <title>Bohey Dulang Semporna | ALG Hotel Resort & Tour</title>
-                <meta name="description" content="Discover Bohey Dulang Semporna with ALG Hotel Resort & Tour. Experience breath-taking tours and packages." />
-            </Helmet>
+            <Seo
+                title="Bohey Dulang Floating Resort | Semporna, Sabah | ALG"
+                description="Discover the upcoming Bohey Dulang ALG Floating Resort in Semporna, Sabah. Enquire with ALG Hotel Resort & Tour for updates."
+                path="/pulau-semporna"
+                image="/Semporna.jpg"
+            />
             <ComingSoon
                 title="SELAKAN"
                 subtitle="Semporna"

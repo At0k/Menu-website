@@ -1,0 +1,14 @@
+@use '../variables' as *;
+
+.ap-contact { display: grid; grid-template-columns: 1.25fr .75fr; position: relative; z-index: 10; }
+.ap-contact__panel { padding: clamp(4rem, 9vw, 8rem) clamp(1.25rem, 8vw, 8rem); background: #fff; }
+.ap-contact__kicker { margin: 0 0 1rem; color: #b1788e; font-size: .72rem; font-weight: 800; letter-spacing: .2em; }
+.ap-contact h2 { margin: 0; color: #271d29; font-family: $font-serif; font-size: clamp(3.2rem, 6vw, 6.2rem); font-weight: 500; letter-spacing: -.05em; line-height: .9; }
+.ap-contact__copy { max-width: 35rem; margin: 1.55rem 0 2rem; color: rgba(39,29,41,.67); font-size: 1.05rem; line-height: 1.75; }
+.ap-contact__button { display: inline-flex; align-items: center; justify-content: center; min-height: 3.2rem; padding: .85rem 1.45rem; border-radius: 999px; color: #fff; background: #271d29; font-size: .78rem; font-weight: 800; letter-spacing: .09em; text-decoration: none; text-transform: uppercase; transition: background .25s ease, transform .25s ease; &:hover { background: #6e455b; transform: translateY(-3px); } }
+.ap-contact__resort { display: flex; flex-direction: column; justify-content: flex-end; min-height: 470px; padding: clamp(2rem, 5vw, 4.5rem); background: linear-gradient(180deg, rgba(37,21,35,.12), rgba(37,21,35,.86)), url('/Semporna.jpg') center / cover; color: #fff; }
+.ap-contact__resort p { margin: 0 0 1rem; color: #f0bfd2; font-size: .68rem; font-weight: 800; letter-spacing: .15em; }
+.ap-contact__resort h3 { margin: 0 0 1.7rem; font-family: $font-serif; font-size: clamp(2.3rem, 4vw, 4rem); font-weight: 500; line-height: .95; }
+.ap-contact__resort a { color: #fff; font-size: .78rem; font-weight: 800; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+.ap-contact__resort a span { margin-left: .4rem; }
+@media (max-width: $md) { .ap-contact { grid-template-columns: 1fr; } .ap-contact__resort { min-height: 380px; } }

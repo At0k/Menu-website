@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet-async'
+import Seo from '../../components/Seo'
 import './NotFound.scss'
 
 const NotFound = () => (
   <main className="not-found">
-    <Helmet>
-      <title>Page Not Found | ALG Hotel Resort & Tour</title>
-      <meta
-        name="description"
-        content="The page you requested could not be found. Return to ALG Hotel Resort & Tour."
-      />
-    </Helmet>
+    <Seo
+      title="Page Not Found | ALG Hotel Resort & Tour"
+      description="The page you requested could not be found. Return to ALG Hotel Resort & Tour."
+      path="/404"
+      image="/LogoOnly.png"
+      noIndex
+    />
 
     <div className="not-found__content">
       <p className="not-found__eyebrow">ALG HOTEL RESORT &amp; TOUR</p>

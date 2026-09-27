@@ -18,6 +18,7 @@ const DEFAULT_LINKS: FooterLink[] = [
     { href: '#suites', label: 'OUR SUITES' },
     { href: '#transport', label: 'TRANSPORT' },
     { href: '#location', label: 'LOCATION' },
+    { href: '#enquire', label: 'ENQUIRE' },
 ]
 
 // ─────────────────────────────────────────────

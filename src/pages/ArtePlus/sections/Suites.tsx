@@ -31,8 +31,8 @@ const SUITES: Suite[] = [
         bedrooms: '1 Bedroom',
         specs: '1 Bedroom   1 Toilet   2 Person',
         images: [
-            '/Room/Studio/c215dc77-be9a-4fea-b779-9997c9dfd93c.avif',
-            '/Room/Studio/d2826a4e-34ad-4ee9-ba0b-601ba0c9e4af.avif'
+            '/ArtePlus/Room/Studio/c215dc77-be9a-4fea-b779-9997c9dfd93c.avif',
+            '/ArtePlus/Room/Studio/d2826a4e-34ad-4ee9-ba0b-601ba0c9e4af.avif'
         ],
         units: [
             { name: 'Leisure Suite', link: 'https://www.airbnb.com/rooms/43399783' },
@@ -45,9 +45,9 @@ const SUITES: Suite[] = [
         bedrooms: '2 Bedroom',
         specs: '2 Bedroom   2 Toilet   4 Person',
         images: [
-            '/Room/Duplex/02545d11-2c00-40ad-a57b-eadcd1d873de.avif',
-            '/Room/Duplex/8dda0a04-762b-4faf-acca-22df4b853adf.avif',
-            '/Room/Duplex/cb9a60d6-211a-4b0f-9e27-41ec2571dfae.avif'
+            '/ArtePlus/Room/Duplex/02545d11-2c00-40ad-a57b-eadcd1d873de.avif',
+            '/ArtePlus/Room/Duplex/8dda0a04-762b-4faf-acca-22df4b853adf.avif',
+            '/ArtePlus/Room/Duplex/cb9a60d6-211a-4b0f-9e27-41ec2571dfae.avif'
         ],
         units: [
             { name: 'Stylo Suite', link: 'https://airbnb.com/h/klcc-alg-stylo-suite' },
@@ -61,8 +61,8 @@ const SUITES: Suite[] = [
         bedrooms: '3 Bedroom',
         specs: '3 Bedroom   3 Toilet   6 Person',
         images: [
-            '/Room/Triplex/4cc0073e-b60e-4178-9d57-db12a83c54ca.avif',
-            '/Room/Triplex/ca9540cf-fc81-4561-9a65-662baec28107.avif'
+            '/ArtePlus/Room/Triplex/4cc0073e-b60e-4178-9d57-db12a83c54ca.avif',
+            '/ArtePlus/Room/Triplex/ca9540cf-fc81-4561-9a65-662baec28107.avif'
         ],
         units: [
             // { name: 'Premium Suite', link: 'https://airbnb.com/h/klcc-alg-premium-suite' },
@@ -75,7 +75,7 @@ const SUITES: Suite[] = [
 // ─────────────────────────────────────────────
 // SuiteCard  ← individual room card
 // ─────────────────────────────────────────────
-const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (suite: Suite) => void }) => {
+const SuiteCard = ({ suite, index, onBook }: { suite: Suite; index: number; onBook: (suite: Suite) => void }) => {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     useEffect(() => {
@@ -83,10 +83,10 @@ const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (suite: Suite) => 
 
         const timer = setInterval(() => {
             setCurrentIndex(prev => (prev + 1) % suite.images.length)
-        }, 4000)
+        }, 3600 + index * 460)
 
         return () => clearInterval(timer)
-    }, [suite.images.length])
+    }, [index, suite.images.length])
 
     return (
         <div 
@@ -102,7 +102,7 @@ const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (suite: Suite) => 
             }}
             aria-label={`View booking options for ${suite.type}`}
         >
-            <div className="ap-suites__card-img-wrap">
+            <div className="ap-suites__card-img-wrap" aria-hidden="true">
                 {suite.images.map((img, idx) => (
                     <img 
                         key={img}
@@ -112,19 +112,18 @@ const SuiteCard = ({ suite, onBook }: { suite: Suite; onBook: (suite: Suite) => 
                     />
                 ))}
             </div>
+            <span className="ap-suites__card-progress">{String(currentIndex + 1).padStart(2, '0')} / {String(suite.images.length).padStart(2, '0')}</span>
             <div className="ap-suites__card-info">
                 <div className="ap-suites__card-names">
+                    <span className="ap-suites__card-eyebrow">ALG ARTE PLUS</span>
                     <span className="ap-suites__card-type">{suite.type}</span>
                     <span className="ap-suites__card-bedrooms">{suite.bedrooms}</span>
                 </div>
             </div>
             <div className="ap-suites__card-popup">
-                <button 
-                    onClick={(e) => { e.stopPropagation(); onBook(suite); }}
-                    tabIndex={-1} // Parent handles focus
-                >
-                    Book
-                </button>
+                <span>
+                    Explore this stay <b>↗</b>
+                </span>
             </div>
         </div>
     )
@@ -234,14 +233,17 @@ const Suites = () => {
     return (
         <section className="ap-suites" id="suites" ref={sectionRef}>
             <div className="ap-suites__header">
-                <h2 className="ap-suites__title ap-title-serif" style={{ textAlign: 'center' }}>ARTE PLUS SUITES</h2>
+                <p className="ap-suites__kicker">YOUR STAY, YOUR WAY</p>
+                <h2 className="ap-suites__title ap-title-serif">The Arte+ collection</h2>
+                <p className="ap-suites__desc">Choose a studio, duplex or triplex stay—each with its own character, live availability and direct booking options.</p>
             </div>
 
             <div className="ap-suites__grid">
-                {SUITES.map(suite => (
+                {SUITES.map((suite, index) => (
                     <SuiteCard
                         key={suite.id}
                         suite={suite}
+                        index={index}
                         onBook={(s) => setModalSuite(s)}
                     />
                 ))}
