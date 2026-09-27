@@ -1,15 +1,75 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import Header from '../ArtePlus/sections/Header'
 import Footer from '../ArtePlus/sections/Footer'
 import './AstrumAmpang.scss'
 
-const SUITES = ['01', '02', '03', '04', '05', '06', '07'].map(number => ({
-  number,
-  href: `https://airbnb.com/h/klcc-alg-astrum-${number}`,
-}))
+const SUITES = [
+  { number: '01', href: 'https://airbnb.com/h/klcc-alg-astrum-01', images: ['/Astrum/Suite_1/Suite_1.avif', '/Astrum/Suite_1/Suite_1_1.avif', '/Astrum/Suite_1/Suite_1_2.avif', '/Astrum/Suite_1/Suite_1_3.jpeg', '/Astrum/Suite_1/Suite_1_4.avif'] },
+  { number: '02', href: 'https://airbnb.com/h/klcc-alg-astrum-02', images: ['/Astrum/Suite_2/Suite_2.avif', '/Astrum/Suite_2/Suite_2_1.jpeg', '/Astrum/Suite_2/Suite_2_2.avif', '/Astrum/Suite_2/Suite_2_3.jpeg', '/Astrum/Suite_2/Suite_2_4.jpeg', '/Astrum/Suite_2/Suite_2_5.jpeg'] },
+  { number: '03', href: 'https://airbnb.com/h/klcc-alg-astrum-03', images: ['/Astrum/Suite_3/Suite_3.jpeg', '/Astrum/Suite_3/Suite_3_1.avif', '/Astrum/Suite_3/Suite_3_2.avif', '/Astrum/Suite_3/Suite_3_4.jpeg', '/Astrum/Suite_3/Suite_3_5.jpeg', '/Astrum/Suite_3/Suite_3_6.jpeg', '/Astrum/Suite_3/Suite_3_7.jpeg', '/Astrum/Suite_3/Suite_3_8.avif', '/Astrum/Suite_3/Suite_3_9.avif', '/Astrum/Suite_3/Suite_3_10.jpeg'] },
+  { number: '04', href: 'https://airbnb.com/h/klcc-alg-astrum-04', images: ['/Astrum/Suite_4/Suite_4.avif'] },
+  { number: '05', href: 'https://airbnb.com/h/klcc-alg-astrum-05', images: ['/Astrum/Suite_5/Suite_5.avif'] },
+  { number: '06', href: 'https://airbnb.com/h/klcc-alg-astrum-06', images: ['/Astrum/Suite_6/Suite_6.avif', '/Astrum/Suite_6/Suite_6_1.avif', '/Astrum/Suite_6/Suite_6_2.jpeg'] },
+  { number: '07', href: 'https://airbnb.com/h/klcc-alg-astrum-07', images: ['/Astrum/Suite_7/Suite_7.avif', '/Astrum/Suite_7/Suite_7_1.avif', '/Astrum/Suite_7/Suite_7_2.avif'] },
+]
+
+const FACILITIES = [
+  { label: 'City views', image: '/Astrum/Facilities/Suite_1_5.jpeg' },
+  { label: 'Living spaces', image: '/Astrum/Facilities/Suite_1_6.jpeg' },
+  { label: 'Rest & recharge', image: '/Astrum/Facilities/Suite_1_7.jpeg' },
+  { label: 'Everyday comfort', image: '/Astrum/Facilities/Suite_1_8.jpeg' },
+  { label: 'Shared facilities', image: '/Astrum/Facilities/Suite_1_9.jpeg' },
+  { label: 'Made for longer stays', image: '/Astrum/Facilities/Suite_1_10.jpeg' },
+]
 
 const WHATSAPP_LINK = 'https://wa.me/60198540955?text=Hi%20ALG%2C%20I%20would%20like%20to%20enquire%20about%20an%20Astrum%20Ampang%20suite.'
+
+type Suite = (typeof SUITES)[number]
+
+const SuiteCard = ({ suite, index }: { suite: Suite; index: number }) => {
+  const [activeImage, setActiveImage] = useState(0)
+  const interval = 3200 + index * 430
+
+  useEffect(() => {
+    if (suite.images.length < 2) return
+    const timer = window.setInterval(() => {
+      setActiveImage(current => (current + 1) % suite.images.length)
+    }, interval)
+    return () => window.clearInterval(timer)
+  }, [interval, suite.images.length])
+
+  return (
+    <a
+      className={`astrum-suite-card${index === 0 ? ' astrum-suite-card--featured' : ''}`}
+      href={suite.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-reveal
+    >
+      <div className="astrum-suite-card__media" aria-hidden="true">
+        {suite.images.map((image, imageIndex) => (
+          <img
+            key={image}
+            className={imageIndex === activeImage ? 'is-active' : ''}
+            src={image}
+            alt=""
+            loading={index === 0 && imageIndex === 0 ? 'eager' : 'lazy'}
+          />
+        ))}
+        <span className="astrum-suite-card__progress">{String(activeImage + 1).padStart(2, '0')} / {String(suite.images.length).padStart(2, '0')}</span>
+      </div>
+      <div className="astrum-suite-card__overlay" />
+      <span className="astrum-suite-card__index">0{index + 1} / 07</span>
+      <div className="astrum-suite-card__body">
+        <span className="astrum-suite-card__eyebrow">ASTRUM AMPANG</span>
+        <span className="astrum-suite-card__number">Suite {suite.number}</span>
+        <span className="astrum-suite-card__detail">KL city stay · Jelatek LRT</span>
+      </div>
+      <span className="astrum-suite-card__action">Explore this suite <b aria-hidden="true">↗</b></span>
+    </a>
+  )
+}
 
 const AstrumAmpang = () => {
   const pageRef = useRef<HTMLDivElement>(null)
@@ -79,24 +139,18 @@ const AstrumAmpang = () => {
         <section className="astrum-suites" id="suites" aria-labelledby="suite-title">
           <div className="astrum-suites__heading" data-reveal><p className="astrum-kicker">YOUR STAY, YOUR CHOICE</p><h2 id="suite-title">The Astrum collection</h2><p>Seven ALG suites are ready to book. Each listing has its own live dates, details and availability on Airbnb.</p></div>
           <div className="astrum-suites__grid">
-            {SUITES.map((suite, index) => (
-              <a
-                key={suite.number}
-                className={`astrum-suite-card${index === 0 ? ' astrum-suite-card--featured' : ''}`}
-                href={suite.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-reveal
-              >
-                <span className="astrum-suite-card__index">0{index + 1} / 07</span>
-                <div className="astrum-suite-card__body">
-                  <span className="astrum-suite-card__eyebrow">ASTRUM AMPANG</span>
-                  <span className="astrum-suite-card__number">Suite {suite.number}</span>
-                  <span className="astrum-suite-card__detail">KL city stay · Jelatek LRT</span>
-                </div>
-                <span className="astrum-suite-card__action">Explore this suite <b aria-hidden="true">↗</b></span>
-              </a>
-            ))}
+            {SUITES.map((suite, index) => <SuiteCard key={suite.number} suite={suite} index={index} />)}
+          </div>
+        </section>
+
+        <section className="astrum-facilities" aria-labelledby="facilities-title">
+          <div className="astrum-facilities__heading" data-reveal>
+            <p className="astrum-kicker">SHARED COMFORTS</p>
+            <h2 id="facilities-title">Make space for the city.</h2>
+            <p>Every Astrum stay is supported by the shared facilities and everyday details that make a city base feel easy.</p>
+          </div>
+          <div className="astrum-facilities__rail">
+            {FACILITIES.map((facility, index) => <figure key={facility.image} className="astrum-facility" data-reveal><img src={facility.image} alt={facility.label} loading="lazy" /><figcaption><span>0{index + 1}</span>{facility.label}</figcaption></figure>)}
           </div>
         </section>
 
